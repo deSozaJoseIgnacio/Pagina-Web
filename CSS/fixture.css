@@ -1,0 +1,122 @@
+.main {
+    background-color: rgb(116, 116, 116);
+    color:rgb(255, 255, 255);
+}
+
+.grupos{
+    
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+/* Asegura que las tablas respeten anchos fijos de celdas */
+.partidos_fase table,
+.tabla_fase table {
+    table-layout: fixed;
+}
+
+/* Tamaño fijo y recorte para celdas iniciales y finales */
+td.celda_inicio,
+td.celda_final {
+    width: 200px;       /* ancho fijo igual para ambas */
+    min-width: 200px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    padding: 6px 8px;
+}
+
+/* Ajuste para las banderas dentro de esas celdas */
+td.celda_inicio img.banderas,
+td.celda_final img.banderas {
+    width: 28px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+
+
+.grupos
+{
+    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
+    width: 300px;        /* Ancho total de la tabla */
+    border-collapse: collapse; /* Une los bordes para que se vean bien */
+}
+
+.grupos td
+{
+    border: 1px solid rgb(0, 0, 0);
+    height: 50px;       /* Alto fijo de la celda */
+    width: 250px;       /* Ancho fijo de la celda */
+    overflow: hidden;   /* Oculta el texto que sobresalga */
+    white-space: nowrap; /* Evita que el texto salte de línea */
+    text-overflow: ellipsis; /* Añade tres puntos (...) si el texto es muy largo */
+}
+
+
+.tabla_fase
+{
+    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
+    width: 300px;        /* Ancho total de la tabla */
+    border-collapse: collapse; /* Une los bordes para que se vean bien */
+}
+
+.tabla_fase td
+{
+    border: 1px solid rgb(0, 0, 0);
+    height: 50px;       /* Alto fijo de la celda */
+    width: 250px;       /* Ancho fijo de la celda */
+    overflow: hidden;   /* Oculta el texto que sobresalga */
+    white-space: nowrap; /* Evita que el texto salte de línea */
+    text-overflow: ellipsis; /* Añade tres puntos (...) si el texto es muy largo */
+}
+
+
+
+.partidos_fase{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.celda_inicio{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.celda_medio{
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.celda_final{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.banderas{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.tabla_fase{
+    font-size: 20px;
+    margin: 50px;
+}
+
+.celda_inicio_fase{
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.celda_medio_fase{
+    align-items: center;
+    padding: 10px 20px;
+}

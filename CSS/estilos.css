@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Encabezado: distribuir links equitativamente */
+header.encabezado nav ul.principal {
+    display: flex;
+    justify-content: space-evenly; /* equidistancia entre items */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Quitar color azul y subrayado en los enlaces del encabezado */
+header.encabezado nav ul.principal a,
+header.encabezado nav ul.principal a:visited {
+    color: inherit;          /* toma el color del contenedor; o usa "#000" / "#fff" según fondo */
+    text-decoration: none;   /* sin subrayado */
+}
+
+/* Mantener sin subrayado en hover/focus y dar feedback visual */
+header.encabezado nav ul.principal a:hover,
+header.encabezado nav ul.principal a:focus {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+
+
+
+.encabezado{
+    color: rgb(0, 12, 0);
+    font-family: monospace;
+}
+
+.principal{
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.botonencabezado{
+    display: inline-block;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 0);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px; 
+    cursor: pointer;
+    list-style: none;
+}
+
+.secundario{
+    background-color: rgb(25, 0, 255);
+    font-size: 10px;
+    max-width: max-content;
+}
+
+.pie_de_pagina{
+    font-family: Verdana;
+    font-size: 30px;
+    background-color: rgb(255, 255, 0);
+}
+
+.botonpiedepagina{
+    display: inline-block;
+    background-color: rgb(168, 168, 0);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px; 
+    cursor: pointer;
+    list-style: none;
+}
