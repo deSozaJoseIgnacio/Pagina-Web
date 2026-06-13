@@ -120,3 +120,53 @@ td.celda_final img.banderas {
     align-items: center;
     padding: 10px 20px;
 }
+
+
+
+
+.grupos_fixture
+{
+    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
+    width: 300px;        /* Ancho total de la tabla */
+    border-collapse: collapse; /* Une los bordes para que se vean bien */
+}
+
+.grupos_fixture td{
+    
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+
+.partidos_fase_fixture{
+    font-size: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.celda_inicio_fixture{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.celda_medio_fixture{
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.celda_final_fixture{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.banderas_fixture{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.fila_vacia{
+    background-color: black;
+    padding: 2px 0px;
+}

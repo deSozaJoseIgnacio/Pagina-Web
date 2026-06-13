@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Encabezado: distribuir links equitativamente */
 header.encabezado nav ul.principal {
     display: flex;
@@ -35,17 +34,18 @@ header.encabezado nav ul.principal a:focus {
 .encabezado{
     color: rgb(0, 12, 0);
     font-family: monospace;
+    border: 20px solid rgb(0, 0, 0);
 }
 
 .principal{
     text-transform: uppercase;
     background-color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .botonencabezado{
     display: inline-block;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 0);
     padding: 10px 20px;
     margin: 5px;

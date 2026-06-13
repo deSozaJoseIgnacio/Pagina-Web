@@ -1,5 +1,118 @@
 .main {
-    background-color: rgb(8, 8, 76);
     color:white;
 }
 
+.fifa{
+    background-color: rgb(0, 0, 57);
+}
+
+.titulo{
+    font-size: 60px;
+}
+
+.explicacion{
+    margin: 10px;
+}
+
+.subtitulo{
+    color:rgb(128, 0, 255);
+    font-size: 40px;
+}
+
+.parrafo{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.lista{
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.imagen{
+    width: 400px;
+}
+
+.argentina{
+    background-color: rgb(76, 140, 200);
+}
+
+.titulo_argentina{
+    text-align: center;
+    color: rgb(172, 143, 0); /* color del texto */
+    padding: 20px;
+    background: linear-gradient(
+        to bottom,
+        #75AADB 0%,   /* celeste superior */
+        #75AADB 33.33%, 
+        white 33.33%, /* blanco central */
+        white 66.66%, 
+        #75AADB 66.66%, /* celeste inferior */
+        #75AADB 100%
+    );
+    font-size: 2em;
+}
+
+.subtitulo_argentina{
+    margin-left: 30px;
+    font-size: 30px;
+
+}
+
+.lista_argentina{
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+.imagen_argentina{
+    margin-left: 80px;
+    width: 400px;
+}
+
+.degrade{
+    height: 15px;
+    background: linear-gradient(to bottom, rgb(76, 140, 200), rgb(247, 235, 28));
+}
+
+.panini{    
+    background-color: rgb(247, 235, 28);
+}
+
+.titulo_panini{
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+}
+
+.explicacion_panini{
+    margin-left: 30px;
+}
+
+.subtitulo_panini{
+    color:rgb(255, 0, 0);
+    font-size: 40px;
+}
+
+.parrafo_titulo_panini{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.parrafo_panini{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.lista_panini{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.imagen_panini{
+    width: 400px;
+}
