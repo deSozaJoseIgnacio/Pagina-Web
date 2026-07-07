@@ -1,0 +1,118 @@
+.contador p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador button{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#cantidad{
+    font-size: 24px;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+.contador{
+    margin: 10px;
+
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    grid-template-rows: auto auto;
+
+    width: 150px; /* ajustá al tamaño de tu figurita */
+    justify-items: center;
+    align-items: center;
+
+    gap: 0px;
+}
+
+/* La figurita ocupa toda la fila superior */
+.contador img{
+    grid-column: 1 / 4;
+    width: 150px;
+    height: auto;
+}
+
+/* Botón - */
+.restar{
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 45px;
+    height: 30px;
+}
+
+/* Número */
+.cantidad{
+    grid-column: 2;
+    grid-row: 2;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+    min-width: 45px;
+}
+
+/* Botón + */
+.sumar{
+    grid-column: 3;
+    grid-row: 2;
+
+    width: 45px;
+    height: 30px;
+}
+
+.figuritas{
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+    gap: 0px;
+
+    max-width: 0px;
+    margin: 0;
+}
+
+/* Cada figurita */
+.contador{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: auto auto;
+
+    justify-items: center;
+    align-items: center;
+
+    padding: 8px;
+    border: 2px solid #000000;
+}
+
+/* Imagen */
+.contador img{
+    grid-column: 1 / 4;
+
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+}
+
+/* Botones */
+.restar,
+.sumar{
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Número */
+.cantidad{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 40px;
+}

@@ -34,7 +34,7 @@ header.encabezado nav ul.principal a:focus {
 .encabezado{
     color: rgb(0, 12, 0);
     font-family: monospace;
-    border: 20px solid rgb(0, 0, 0);
+    border: 10px solid rgb(34, 34, 34);
 }
 
 .principal{
@@ -60,11 +60,6 @@ header.encabezado nav ul.principal a:focus {
     max-width: max-content;
 }
 
-.pie_de_pagina{
-    font-family: Verdana;
-    font-size: 30px;
-    background-color: rgb(255, 255, 0);
-}
 
 .botonpiedepagina{
     display: inline-block;
@@ -76,3 +71,160 @@ header.encabezado nav ul.principal a:focus {
     cursor: pointer;
     list-style: none;
 }
+
+
+
+
+/* Menú principal */
+.principal{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+}
+
+.principal > li{
+    position: relative;
+}
+
+/* Botones principales */
+.botonencabezado{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.botonencabezado:hover{
+    background-color: #c50000;
+}
+
+/* Submenú oculto */
+.secundario{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: #333;
+
+    min-width: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+/* Mostrar al pasar el mouse sobre Album */
+.album:hover .secundario{
+    display: block;
+}
+
+/* Items del submenú */
+.secundario li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.secundario li a:hover{
+    background-color: #555;
+}
+
+
+
+
+.pie_de_pagina{
+    font-family: Verdana;
+    font-size: 30px;
+    background-color: rgb(63, 0, 0);
+    color: white;
+}
+
+
+.pie_de_pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 25px 40px;
+    margin-top: 50px;
+    border-top: 3px solid #444;
+    font-family: Arial, sans-serif;
+}
+
+.izquierda, 
+.derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.izquierda p, 
+.derecha p {
+    margin: 0;
+}
+
+.izquierda p:first-child,
+.derecha p:first-child {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f0c040;
+}
+
+.imagen_pie_de_pagina {
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.derecha p {
+    display: flex;
+    align-items: center;
+}
+
+
+.pie_de_pagina{
+    margin-top: 70px;
+
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(20px);
+
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 4px solid #ffd700;
+}
+
+.izquierda,
+.derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.izquierda p:first-child,
+.derecha p:first-child{
+    color: #ffd700;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.imagen_pie_de_pagina{
+    width: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+

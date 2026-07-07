@@ -1,0 +1,389 @@
+/* ==================================================
+ESTILOS GENERALES
+================================================== */
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #00a8ff,
+        #0066cc,
+        #001f54
+    );
+}
+
+main{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ==================================================
+TITULOS
+================================================== */
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+
+    text-transform: uppercase;
+
+    text-shadow: 0 0 15px rgba(255,255,255,.4);
+}
+
+h3{
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+/* ==================================================
+CABECERA DEL ALBUM
+================================================== */
+
+.cabecera_album{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 40px 0;
+}
+
+.cabecera_album h1{
+    flex: 1;
+    text-align: center;
+}
+
+/* ==================================================
+BOTONES DEL ALBUM
+================================================== */
+
+.boton_album{
+    border: none;
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    font-size: .95rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.completar,
+.vaciar{
+    background: #f0c14b;
+    color: #222;
+}
+
+.completar:hover,
+.vaciar:hover{
+    transform: translateY(-2px);
+}
+
+.completar:hover{
+    background: #ffeb3b;
+}
+
+.vaciar:hover{
+    background: #fdd835;
+}
+
+/* ==================================================
+GRID DE FIGURITAS
+================================================== */
+
+.figuritas{
+    display: grid;
+    grid-template-columns: repeat(8,150px);
+
+    gap: 40px;
+
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+/* ==================================================
+BANDERA Y ESPACIOS
+================================================== */
+
+.bandera_pais{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+    display: grid;
+    place-items: center;
+
+    width: 320px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.vacio{
+    width: 150px;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+/* ==================================================
+TARJETAS DE FIGURITAS
+================================================== */
+
+.contador,
+.contador_horizontal{
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+    transition: .3s;
+}
+
+.contador:hover,
+.contador_horizontal:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.35);
+}
+
+.contador{
+    width: 150px;
+}
+
+.contador_horizontal{
+    width: 200px;
+    height: auto;
+
+    grid-row: 8;
+}
+
+.contador_java:has(.contador_horizontal){
+    grid-column: 7 / span 2;
+    grid-row: 1;
+
+    place-items: center;
+}
+
+/* ==================================================
+IMAGENES DE FIGURITAS
+================================================== */
+
+.contador img{
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+}
+
+.contador_horizontal img{
+    width: 80%;
+
+    border-radius: 12px;
+
+    margin-bottom: 0;
+
+    transform: rotate(90deg);
+}
+
+/* ==================================================
+BOTONES + Y -
+================================================== */
+
+.sumar,
+.restar{
+    border: none;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.sumar{
+    background: #00c853;
+    color: white;
+}
+
+.sumar:hover{
+    background: #00e676;
+}
+
+.restar{
+    background: #d50000;
+    color: white;
+}
+
+.restar:hover{
+    background: #ff1744;
+}
+
+.cantidad{
+    display: inline-block;
+
+    min-width: 40px;
+
+    color: #111;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* ==================================================
+SECCIONES DE INFORMACION
+================================================== */
+
+section{
+    background: rgba(255,255,255,.1);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+}
+
+/* ==================================================
+LISTAS Y BANDERAS
+================================================== */
+
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style: none;
+    margin: 8px 0;
+}
+
+.bandera_grupo{
+    width: 32px;
+    height: 22px;
+
+    object-fit: cover;
+
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    border-radius: 3px;
+
+    box-shadow: 0 0 8px rgba(255,255,255,.4);
+}
+
+/* ==================================================
+PARTIDOS
+================================================== */
+
+.partido{
+    width: 100%;
+
+    margin: 20px auto;
+
+    background: rgba(255,255,255,.05);
+
+    backdrop-filter: blur(2px);
+
+    border: 3px solid black;
+
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    overflow: hidden;
+}
+
+.equipo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+
+    font-size: 18px;
+}
+
+.equipo:first-child{
+    border-bottom: 3px solid black;
+}
+
+.equipo span:first-child{
+    font-weight: 600;
+}
+
+.equipo span:last-child{
+    min-width: 30px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.seleccion{
+    color: rgb(255,251,0);
+}
+
+/* ==================================================
+TABLAS
+================================================== */
+
+table{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+td{
+    padding: 15px;
+
+    border: 1px solid rgba(255,255,255,.2);
+
+    background: rgba(0,0,0,.15);
+}
+
+tr:hover td{
+    background: rgba(255,255,255,.12);
+}
+
+td:last-child{
+    width: 60px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #ffd700;
+}

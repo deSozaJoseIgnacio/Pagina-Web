@@ -11,9 +11,11 @@
 }
 
 
+
 /* Asegura que las tablas respeten anchos fijos de celdas */
 .partidos_fase table,
-.tabla_fase table {
+.tabla_fase table,
+.tabla_terceros{
     table-layout: fixed;
 }
 
@@ -60,14 +62,16 @@ td.celda_final img.banderas {
 }
 
 
-.tabla_fase
+.tabla_fase,
+.tabla_terceros
 {
     table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
     width: 300px;        /* Ancho total de la tabla */
     border-collapse: collapse; /* Une los bordes para que se vean bien */
 }
 
-.tabla_fase td
+.tabla_fase td,
+.tabla_terceros td
 {
     border: 1px solid rgb(0, 0, 0);
     height: 50px;       /* Alto fijo de la celda */
@@ -106,7 +110,8 @@ td.celda_final img.banderas {
     margin-right: 10px;
 }
 
-.tabla_fase{
+.tabla_fase,
+.tabla_terceros{
     font-size: 20px;
     margin: 50px;
 }

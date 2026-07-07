@@ -1,0 +1,191 @@
+/* ===== FONDO GENERAL ===== */
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb,
+        #38bdf8
+    );
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.main{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ===== TITULOS ===== */
+
+.titulo,
+.titulo_panini{
+    text-align: center;
+    font-size: 4rem;
+    margin: 60px 0;
+    color: #fff;
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
+
+/* ===== TARJETAS ===== */
+
+.explicacion,
+.explicacion_panini,
+.argentina{
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 25px;
+    padding: 35px;
+    margin: 40px 0;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 20px rgba(255,255,255,.1);
+
+    transition: .4s;
+}
+
+.explicacion:hover,
+.explicacion_panini:hover,
+.argentina:hover{
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        0 0 30px #00d9ff;
+}
+
+/* ===== SUBTITULOS ===== */
+
+.subtitulo,
+.subtitulo_panini,
+.titulo_argentina{
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(255,215,0,.8);
+}
+
+.subtitulo_argentina,
+.parrafo_titulo_panini{
+    color: #00ffb7;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ===== TEXTO ===== */
+
+.parrafo,
+.parrafo_panini{
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ===== LISTAS ===== */
+
+.lista,
+.lista_panini,
+.lista_argentina{
+    margin-top: 15px;
+    padding-left: 30px;
+}
+
+.lista li,
+.lista_panini li,
+.lista_argentina li{
+    margin: 10px 0;
+}
+
+/* ===== IMAGENES ===== */
+
+.imagen,
+.imagen_panini,
+.imagen_argentina{
+    
+    height: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 15px;
+    cursor: pointer;
+
+    border: 3px solid transparent;
+
+    transition: .4s;
+}
+
+.imagen:hover,
+.imagen_panini:hover,
+.imagen_argentina:hover{
+
+    border-color: #ffd700;
+
+    box-shadow:
+        0 0 10px #ffd700,
+        0 0 30px #ffd700,
+        0 0 50px #ffd700;
+}
+
+/* ===== SEPARADOR FIFA / PANINI ===== */
+
+.degrade{
+    height: 12px;
+    border-radius: 999px;
+    margin: 70px 0;
+
+    background: linear-gradient(
+        90deg,
+        #00d9ff,
+        #00ffb7,
+        #ffd700,
+        #ff5e00,
+        #ff006a
+    );
+
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 30px #ff006a;
+}
+
+/* ===== ARGENTINA ===== */
+
+.argentina{
+    border: 3px solid #6ec6ff;
+}
+
+.titulo_argentina{
+    color: #6ec6ff;
+}
+
+/* ===== SCROLLBAR ===== */
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width: 768px){
+
+    .titulo,
+    .titulo_panini{
+        font-size: 2.5rem;
+    }
+
+    .pie_de_pagina{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .imagen,
+    .imagen_panini,
+    .imagen_argentina{
+        width: 100%;
+    }
+}
