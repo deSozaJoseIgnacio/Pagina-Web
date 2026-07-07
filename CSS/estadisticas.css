@@ -22,14 +22,6 @@ body{
 
 .grilla{
 
-    display:grid;
-    grid-template-columns:repeat(6,140px);
-    gap:25px;
-
-    justify-content:center;
-
-    padding:25px;
-
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(10px);
 
@@ -39,6 +31,30 @@ body{
 
     box-shadow:
         0 10px 30px rgba(0,0,0,.35);
+}
+
+.grilla_siete{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns:repeat(7,140px);
+    gap:25px;
+
+    justify-content:center;
+
+
+
+}
+
+.grilla_ocho{
+
+    display:grid;
+    grid-template-columns:repeat(8,140px);
+    gap:25px;
+
+    justify-content:center;
+
+    padding: 100px 0px;
+
 
 }
 

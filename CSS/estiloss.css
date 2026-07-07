@@ -101,7 +101,7 @@
         #ffd700,
         #ff006a
     );
-    border-radius: 999px;
+    border-radius: 0px;
 }
 
 /* =========================
@@ -253,7 +253,7 @@
 
 .pie_de_pagina{
     font-family: Verdana;
-    font-size: 30px;
+    font-size: 15px;
     background-color: rgb(63, 0, 0);
     color: white;
 }
@@ -285,7 +285,7 @@
 
 .izquierda p:first-child,
 .derecha p:first-child {
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #f0c040;
@@ -327,7 +327,7 @@
 .izquierda p:first-child,
 .derecha p:first-child{
     color: #ffd700;
-    font-size: 1.3rem;
+    font-size: 25px;
     font-weight: bold;
 }
 
