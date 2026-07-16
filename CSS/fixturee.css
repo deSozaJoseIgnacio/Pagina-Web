@@ -308,7 +308,7 @@ h2{
     
     height: 20px;
     
-    border: 4px solid rgba(255, 0, 0, 0.39);
+    border: 4px solid rgba(255, 255, 255, 0);
 }
 
 .zz{
@@ -321,7 +321,7 @@ h2{
     height: 10px;
 
     
-    border: 4px solid rgba(51, 255, 0, 0.24);
+    border: 4px solid rgba(255, 255, 255, 0);
 }
 
 .partido_god{

@@ -78,58 +78,7 @@
         </header>
 
         <main class="main">
-            <p>
-                Aca tendria que estar las estadisticas del mundial; el mas goleador, mas asistencias, la cantidad de goles que metio el pais ganador, un poco de historia del pais ganador, qué paso luego de que el pais ganador haya triunfado, etc.
-            </p>
-
-            <h4>Lista de los 5 Jugadores mas GOLEADORES</h4>
-            <ul>
-                <li>Jugador 1:</li>
-                <li>Jugador 2:</li>
-                <li>Jugador 3:</li>
-                <li>Jugador 4:</li>
-                <li>Jugador 5:</li>
-            </ul>
-            <h4>Lista de los 5 Jugadores mas ASISTIDORES</h4>
-            <ul>
-                <li>Jugador 1:</li>
-                <li>Jugador 2:</li>
-                <li>Jugador 3:</li>     
-                <li>Jugador 4:</li>
-                <li>Jugador 5:</li>
-            </ul>
-            <h4>Lista de los 5 Jugadores con mas MINUTOS</h4>
-            <ul>
-                <li>Jugador 1:</li>
-                <li>Jugador 2:</li>
-                <li>Jugador 3:</li>
-                <li>Jugador 4:</li>
-                <li>Jugador 5:</li>
-            </ul>
-            <h4>Lista de las 5 Selecciones mas GOLEADORES</h4>
-            <ul>
-                <li>Seleccion 1:</li>
-                <li>Seleccion 2:</li>
-                <li>Seleccion 3:</li>
-                <li>Seleccion 4:</li>
-                <li>Seleccion 5:</li>
-            </ul>
-            <h4>Jugador Ganador del Guante de Oro</h4>
-            <ul>
-                <li>Jugador 1</li>
-            </ul>
-            <h4>Lista de Jugador Revelacion</h4>
-            <ul>
-                <li>Jugador 1:</li>
-                <li>Jugador 2:</li>
-                <li>Jugador 3:</li>
-                <li>Jugador 4:</li>
-                <li>Jugador 5:</li>
-            </ul>
-            <h4>Seleccion Revelacion</h4>
-            <ul>
-                <li>Jugador 1</li>
-            </ul>
+            
 
 
             
@@ -137,17 +86,19 @@
             
             <div class="grilla">
                 <div class="grilla_siete">
-                    <div class="instancia">Grupos</div>
-                    <div class="instancia">16avos</div>
-                    <div class="instancia">8vos</div>
-                    <div class="instancia">4tos</div>
-                    <div class="instancia">Semifinal</div>
-                    <div class="instancia">Final</div>
-                    <div class="instancia">Campeón</div>
+                    <button class="instancia activa" data-etapa="grupos">Grupos</button>
+                    <button class="instancia" data-etapa="16avos">16avos</button>
+                    <button class="instancia" data-etapa="8vos">8vos</button>
+                    <button class="instancia" data-etapa="4tos">4tos</button>
+                    <button class="instancia" data-etapa="semifinal">Semifinal</button>
+                    <button class="instancia" data-etapa="final">Final</button>
+                    <button class="instancia" data-etapa="campeon">Campeón</button>
                 </div>
 
+                <img id="imagen" src="../PNG/Fixture.png" alt="Copa">
+
                 <div class="grilla_ocho">
-                    <div class="equipo">
+                    <div class="equipo" data-eliminado="8vos">
                         <img src="../PNG/Banderas/alemania.png" alt="Alemania">
 
                         <div class="plegable">
@@ -1110,6 +1061,59 @@
                 </div>
             </div>
 
+
+            <p>
+                Aca tendria que estar las estadisticas del mundial; el mas goleador, mas asistencias, la cantidad de goles que metio el pais ganador, un poco de historia del pais ganador, qué paso luego de que el pais ganador haya triunfado, etc.
+            </p>
+
+            <h4>Lista de los 5 Jugadores mas GOLEADORES</h4>
+            <ul>
+                <li>Jugador 1:</li>
+                <li>Jugador 2:</li>
+                <li>Jugador 3:</li>
+                <li>Jugador 4:</li>
+                <li>Jugador 5:</li>
+            </ul>
+            <h4>Lista de los 5 Jugadores mas ASISTIDORES</h4>
+            <ul>
+                <li>Jugador 1:</li>
+                <li>Jugador 2:</li>
+                <li>Jugador 3:</li>     
+                <li>Jugador 4:</li>
+                <li>Jugador 5:</li>
+            </ul>
+            <h4>Lista de los 5 Jugadores con mas MINUTOS</h4>
+            <ul>
+                <li>Jugador 1:</li>
+                <li>Jugador 2:</li>
+                <li>Jugador 3:</li>
+                <li>Jugador 4:</li>
+                <li>Jugador 5:</li>
+            </ul>
+            <h4>Lista de las 5 Selecciones mas GOLEADORES</h4>
+            <ul>
+                <li>Seleccion 1:</li>
+                <li>Seleccion 2:</li>
+                <li>Seleccion 3:</li>
+                <li>Seleccion 4:</li>
+                <li>Seleccion 5:</li>
+            </ul>
+            <h4>Jugador Ganador del Guante de Oro</h4>
+            <ul>
+                <li>Jugador 1</li>
+            </ul>
+            <h4>Lista de Jugador Revelacion</h4>
+            <ul>
+                <li>Jugador 1:</li>
+                <li>Jugador 2:</li>
+                <li>Jugador 3:</li>
+                <li>Jugador 4:</li>
+                <li>Jugador 5:</li>
+            </ul>
+            <h4>Seleccion Revelacion</h4>
+            <ul>
+                <li>Jugador 1</li>
+            </ul>
             
         </main>
         <footer class="pie_de_pagina">
@@ -1124,5 +1128,6 @@
                 <p><img src="../PNG/gmail_logo.png" class="imagen_pie_de_pagina">teissnicolas09@gmail.com</p>
             </div>
         </footer>
+        <script src="../../JAVASCRIPT/figurita.js"></script>
     </body>
 </html>
