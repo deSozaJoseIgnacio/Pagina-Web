@@ -344,6 +344,7 @@ h2{
     height: 20px;
 
     border: 1px solid rgba(255, 238, 0, 0.349);
+    background: linear-gradient(rgb(0, 20, 40),rgb(0,20,60));
     border-radius: 4px;
 
     justify-content: space-between;

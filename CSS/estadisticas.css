@@ -34,6 +34,7 @@ body{
 /* CONTENEDOR */
 
 .grilla{
+    margin-top: 35px;
 
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(10px);
@@ -71,28 +72,70 @@ body{
 
 }
 
-/* TITULOS */
+/* BOTONES */
 
 .instancia{
+    background: linear-gradient(
+        180deg,
+        #1e3a5f 0%,
+        #142d4c 100%
+    );
 
-    text-align:center;
+    color: #eaf4ff;
+    border: 1px solid #29527a;
+    border-radius: 12px;
 
-    color:white;
+    padding: 12px 20px;
 
-    font-size:1.25rem;
+    font-size: 15px;
+    font-weight: 600;
 
-    font-weight:bold;
+    cursor: pointer;
 
-    letter-spacing:1px;
+    transition:
+        background .25s,
+        transform .25s,
+        box-shadow .25s,
+        border-color .25s;
 
-    text-shadow:
-        0 0 10px #00bfff,
-        0 0 20px #00bfff;
-
-    margin-bottom:10px;
-
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.25);
 }
 
+/* Hover */
+.instancia:hover{
+    background: linear-gradient(
+        180deg,
+        #28507f 0%,
+        #1c3f66 100%
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.35);
+}
+
+/* Click */
+.instancia:active{
+    transform: translateY(1px);
+}
+
+/* Botón seleccionado */
+.instancia.activo{
+    background: linear-gradient(
+        180deg,
+        #1f7ae0 0%,
+        #1257b8 100%
+    );
+
+    border-color: #5ba7ff;
+
+    box-shadow:
+        0 0 0 2px rgba(91,167,255,.25),
+        0 0 18px rgba(91,167,255,.5),
+        0 6px 20px rgba(0,0,0,.35);
+}
 /* TARJETA */
 
 .equipo,
@@ -151,6 +194,7 @@ body{
     z-index: 1000;
 }
 
+
 /* BANDERAS */
 
 .equipo img,
@@ -165,6 +209,17 @@ body{
 
 }
 
+/* BANDERAS ELIMINADAS */
+
+
+.eliminado img{
+    transition: .3s;
+    filter: grayscale(100%) brightness(0.7);
+}
+
+.plegable.eliminado{
+    filter: grayscale(100%) brightness(0.7);
+}
 
 /* TOOLTIP */
 
