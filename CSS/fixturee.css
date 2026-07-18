@@ -2,9 +2,8 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background:
-        linear-gradient(rgba(0,20,60,.85),rgba(0,20,60,.85)),
-        url("./PNG/fondo_mundial.jpg");
+    background:        
+        radial-gradient(circle at top,#003b8e 0%,#032751 40%,#041022 100%);
 
     background-size:cover;
     background-attachment:fixed;
@@ -193,7 +192,8 @@ h2{
 
 }
 
-/* TABLA FIXTURE 16AVOS */
+
+/* CONTENEDOR GENERAL */
 
 .fondo_fixture{
     flex-wrap:wrap;
@@ -206,94 +206,6 @@ h2{
 
 }
 
-.fixture{
-    color: black;
-    display:grid;
-    grid-template-columns: repeat(11,140px);
-
-    gap:40px;
-    align-items:center;
-    padding:20px;
-    overflow-x:auto;
-}
-
-.columna{
-    display:flex;
-    flex-direction:column;
-}
-
-.izquierda{
-    text-align: left;
-}
-.derecha{
-    text-align: right;
-}
-
-.equipo,
-.partido,
-.final,
-.tercero{
-    border:1px solid #333;
-    padding:8px 12px;
-    background:rgb(255, 255, 255);
-    border-radius:6px;
-    text-align:center;
-    min-width:160px;
-}
-
-.equipo{
-    margin:9px 0;
-    
-    display:flex;
-    align-items:center;
-
-
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.ronda2{
-    justify-content:space-around;
-    height:800px;
-}
-
-.ronda3{
-    justify-content:space-around;
-    height:800px;
-}
-
-.ronda4{
-    justify-content:space-around;
-    height:800px;
-}
-
-.ronda5{
-    justify-content:center;
-    height:800px;
-}
-
-.centro{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:80px;
-    align-items:center;
-}
-
-.final{
-    font-size:1.3rem;
-    font-weight:bold;
-}
-
-.tercero{
-    font-size:1.1rem;
-}
-
-
-
-
-/* CONTENEDOR GENERAL */
 .fixture_god{
 
     position: relative;
@@ -322,10 +234,6 @@ h2{
     border: 4px solid rgba(255, 255, 255, 0);
 }
 
-.zz{
-    color: red;
-}
-
 .separacion_god{
     
     margin: 10px 0px;
@@ -344,9 +252,12 @@ h2{
     height: 40px;
     
     border: 4px solid rgba(0, 68, 255, 0);
+
+    position: relative;
 }
 
 .equipo_god{
+
     margin: 0px 0px;
 
     display:flex;
@@ -364,6 +275,9 @@ h2{
     padding: 8px 12px;
 }
 
+.equipo_ganador{
+    color: rgb(255, 255, 0);
+}
 
 .izquierda_god{
     text-align: left;
@@ -373,58 +287,210 @@ h2{
     text-align: right;
 }
 
-.conector_god{
-    position: absolute;
-
-    /* Mover donde quieras */
-    left: 200px;
-    top: 78px;
-
-    width: 50px;
-    height: 97px;
-
-    border-right: 3px solid #000;
-    pointer-events: none; /* opcional */
+.seccion{
+    position: relative;
 }
 
-.conector_god::before,
-.conector_god::after{
-    content: "";
-    position: absolute;
+
+.seccion{
+    position: relative;
+}
+
+
+
+/*LLAVES DE OCTAVOS*/
+
+.octavos .seccion .partido_god:first-child::before{
+    content:"";
+    position:absolute;
+
+    left: -33px;
+    top: -4px;
+
+    width: 16px;
+    border-top:2px solid rgb(255, 255, 255);
+}
+
+.octavos .seccion .partido_god:last-child::before{
+    content:"";
+    position:absolute;
+
+    left:-33px;
+    top: 43px;
+
+    width: 18px;
+    border-top:2px solid rgb(255, 255, 255);
+}
+
+.octavos .seccion::before{
+    content:"";
+    position:absolute;
+
+    left:-13px;
+    top: 0px;
+
+    width:0;
+    height: 95px;
+
+    border-left:2px solid rgb(255, 255, 255);
+}
+
+.octavos .seccion .partido_god:first-child::after{
+    content:"";
+    position:absolute;
+
+    left: -15px;
+    top: 42px;
+
     width: 15px;
-    height: 3px;
-    background: #000;
-    right: 0;
+    border-top:2px solid rgb(255, 255, 255);
 }
 
-.conector_god::before{
-    top: 0;
+
+/*LLAVES DE CUARTOS*/
+
+.cuartos .seccion .partido_god:first-child::before{
+    content:"";
+    position:absolute;
+
+    left: -33px;
+    top: -52px;
+
+    width: 18px;
+    border-top:2px solid rgb(255, 255, 255);
 }
 
-.conector_god::after{
-    bottom: 0;
+.cuartos .seccion .partido_god:last-child::before{
+    content:"";
+    position:absolute;
+
+    left: -33px;
+    top: 89px;
+
+    width: 18px;
+    border-top:2px solid rgb(255, 255, 255);
 }
 
-.llave_god{
-    position: relative;
-    height: 220px;
+.cuartos .seccion::before{
+    content:"";
+    position:absolute;
+
+    left:-13px;
+    top: -48px;
+
+    width:0;
+    height: 188px;
+
+    border-left:2px solid rgb(255, 255, 255);
 }
-.llave_god{
-    position: relative;
+
+.cuartos .seccion .partido_god:first-child::after{
+    content:"";
+    position:absolute;
+
+    left: -15px;
+    top: 42px;
+
+    width: 15px;
+    border-top:2px solid rgb(255, 255, 255);
 }
 
-.llave_god::after{
-    content: "";
 
-    position: absolute;
 
-    left: 100%;
-    top: 50%;
+/*LLAVES DE SEMIFINAL*/
 
-    width: 50px;
-    height: 120px;
+.semifinal .seccion .partido_god:first-child::before{
+    content:"";
+    position:absolute;
 
-    border-right: 3px solid black;
+    left: -33px;
+    top: -146px;
 
-    transform: translateY(-50%);
+    width: 18px;
+    border-top:2px solid rgb(255, 255, 255);
+}
+
+.semifinal .seccion .partido_god:last-child::before{
+    content:"";
+    position:absolute;
+
+    left:-33px;
+    top: 184px;
+
+    width: 18px;
+    border-top:2px solid rgb(255, 255, 255);
+}
+
+.semifinal .seccion::before{
+    content:"";
+    position:absolute;
+
+    left:-13px;
+    top: -142px;
+
+    width:0;
+    height: 378px;
+
+    border-left:2px solid rgb(255, 255, 255);
+}
+
+.semifinal .seccion .partido_god:first-child::after{
+    content:"";
+    position:absolute;
+
+    left: -15px;
+    top: 42px;
+
+    width: 15px;
+    border-top:2px solid rgb(255, 255, 255);
+}
+
+/*LLAVES DE FINAL*/
+
+
+
+.final .seccion .partido_god:first-child::before{
+    content:"";
+    position:absolute;
+
+    left: -33px;
+    top: -4px;
+
+    width: 17px;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.final .seccion .partido_god_final:last-child::before{
+    content:"";
+    position:absolute;
+
+    left: -29px;
+    top: 47px;
+
+    width: 17px;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.final .seccion::before{
+    content:"";
+    position:absolute;
+
+    left:-12px;
+    top: 0px;
+
+    width:0;
+    height: 49px;
+
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.final .seccion .partido_god:first-child::after{
+    content:"";
+    position:absolute;
+
+    left: -15px;
+    top: 19px;
+
+    width: 16px;
+    border-top: 2px solid rgb(255, 255, 255);
 }
