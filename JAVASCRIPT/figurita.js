@@ -1,72 +1,78 @@
 const contadores = document.querySelectorAll(".contador_java");
 
-// Recuperar datos guardados
-let valores = JSON.parse(localStorage.getItem("contadores")) || [];
+let album = JSON.parse(localStorage.getItem("album")) || {};
 
-contadores.forEach((contador_java, indice) => {
-    const cantidad = contador_java.querySelector(".cantidad");
-    const sumar = contador_java.querySelector(".sumar");
-    const restar = contador_java.querySelector(".restar");
+contadores.forEach(contador => {
 
-    // Ignorar contadores vacíos
-    if (!cantidad || !sumar || !restar) return;
+    const id = contador.dataset.id;
 
-    if (valores[indice] === undefined) {
-        valores[indice] = 0;
+    const cantidad = contador.querySelector(".cantidad");
+    const sumar = contador.querySelector(".sumar");
+    const restar = contador.querySelector(".restar");
+
+    if (!id || !cantidad || !sumar || !restar) return;
+
+    if (album[id] === undefined) {
+        album[id] = 0;
     }
 
-    cantidad.textContent = valores[indice];
+    cantidad.textContent = album[id];
 
     sumar.addEventListener("click", () => {
-        valores[indice]++;
-        cantidad.textContent = valores[indice];
+        album[id]++;
+        cantidad.textContent = album[id];
 
-        localStorage.setItem("contadores", JSON.stringify(valores));
+        localStorage.setItem("album", JSON.stringify(album));
     });
 
     restar.addEventListener("click", () => {
-        if (valores[indice] > 0) {
-            valores[indice]--;
-            cantidad.textContent = valores[indice];
+        if (album[id] > 0) {
+            album[id]--;
 
-            localStorage.setItem("contadores", JSON.stringify(valores));
+            cantidad.textContent = album[id];
+
+            localStorage.setItem("album", JSON.stringify(album));
         }
     });
 });
 
-
-// Botones del álbum
 const botonCompletar = document.querySelector(".completar");
+
+if (botonCompletar) {
+    botonCompletar.addEventListener("click", () => {
+
+        contadores.forEach(contador => {
+
+            const id = contador.dataset.id;
+            const cantidad = contador.querySelector(".cantidad");
+
+            if (!id || !cantidad) return;
+
+            album[id] = 1;
+            cantidad.textContent = 1;
+        });
+
+        localStorage.setItem("album", JSON.stringify(album));
+    });
+}
+
 const botonVaciar = document.querySelector(".vaciar");
 
-// Completar álbum
-botonCompletar.addEventListener("click", () => {
-    contadores.forEach((contador_java, indice) => {
-        const cantidad = contador_java.querySelector(".cantidad");
+if (botonVaciar) {
+    botonVaciar.addEventListener("click", () => {
 
-        // Ignorar elementos que no sean figuritas
-        if (!cantidad) return;
+        contadores.forEach(contador => {
 
-        if (valores[indice] === 0) {
-            valores[indice] = 1;
-            cantidad.textContent = 1;
-        }
+            const id = contador.dataset.id;
+            const cantidad = contador.querySelector(".cantidad");
+
+            if (!id || !cantidad) return;
+
+            album[id] = 0;
+            cantidad.textContent = 0;
+        });
+
+        localStorage.setItem("album", JSON.stringify(album));
     });
+}
 
-    localStorage.setItem("contadores", JSON.stringify(valores));
-});
-
-// Vaciar álbum
-botonVaciar.addEventListener("click", () => {
-    contadores.forEach((contador_java, indice) => {
-        const cantidad = contador_java.querySelector(".cantidad");
-
-        // Ignorar elementos que no sean figuritas
-        if (!cantidad) return;
-
-        valores[indice] = 0;
-        cantidad.textContent = 0;
-    });
-
-    localStorage.setItem("contadores", JSON.stringify(valores));
-});

@@ -195,6 +195,17 @@ h2{
 
 /* TABLA FIXTURE 16AVOS */
 
+.fondo_fixture{
+    flex-wrap:wrap;
+    justify-content:center;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.2),rgba(0, 255, 0, 0.2));
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+}
+
 .fixture{
     color: black;
     display:grid;

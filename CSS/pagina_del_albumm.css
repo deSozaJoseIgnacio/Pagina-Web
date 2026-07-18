@@ -610,6 +610,7 @@ SELECCIONES
 }
 
 .corea_del_sur{
+    
     background: #b8bbbe;
 }
 
@@ -870,7 +871,7 @@ SELECCIONES
 
 .mexico{
     background: linear-gradient(
-        135deg,
+        to right,
         rgb(0, 65, 0),
         #b8bbbe,
         #750101
