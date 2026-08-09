@@ -97,10 +97,9 @@
 
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(
-        #e100ff,
-        #00d9ff,
-        #ffd700,
-        #ff006a
+        #00ccff,
+        #ffffff,
+        #00ccff
     );
     border-radius: 0px;
 }

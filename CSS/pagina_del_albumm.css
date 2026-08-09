@@ -163,7 +163,8 @@ BANDERA Y ESPACIOS
     display: grid;
     place-items: center;
 
-    width: 265px;
+    max-width: 250px;
+    max-height: 200px;
 
     border-radius: 20px;
 
