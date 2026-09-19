@@ -1,0 +1,149 @@
+@font-face {
+    font-family:'FWC_Encabezado';
+    src: url(../FUENTE/FWC2026-NormalRegular.ttf);
+}
+
+.contenedor_historia{
+    margin-left: 60px;
+    position: absolute;
+}
+
+/* Primera sección */
+.seccion1 {
+    z-index: 10;
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 230px;
+    height: 220px;
+
+    padding-top: 10px;  
+
+    background: linear-gradient(
+        0deg,
+        #06338b 0%,
+        #000e31 100%
+    );
+
+    border-radius: 10px 10px 7px 0px;
+}
+
+/* Segunda sección */
+.seccion2 {
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+
+    z-index: 0;
+
+    margin-top: 15px;
+    
+    position: absolute;
+
+    left: 230px;
+    top: 0;
+
+    min-width: 110px;
+    min-height: 170px;
+    max-height: 290px;
+
+    background: linear-gradient(
+        to bottom,
+        #c9d9ff 0%,
+        #3477ff 100%
+    );
+
+    border-radius: 0 10px 10px 0;
+}
+
+.seccion2_grande{
+    min-width: 130px;
+}
+
+.seccion2 .top{
+    padding-top: 3px;
+
+    min-width: 110px;
+    max-width: 140px;
+    height: 20px;
+
+    background-color: rgb(186, 126, 255);
+
+    font-size: 14px;
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+    border-radius: 0 10px 0 0;
+}
+
+.seccion2 .goles{
+    font-size: 14px;
+
+    text-align: center;
+    color: rgb(31, 0, 167);
+}
+
+.seccion2 p{
+    text-align: center;
+}
+
+.seccion2 img:hover {
+    transform: translateY(-8px) scale(1.4);
+    box-shadow: 0 15px 30px rgba(0,0,0,.35);
+}
+
+.seccion2 img{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 90px;
+    border-radius: 10px;
+
+    transition: .3s;
+
+    border: 3px solid rgb(46, 0, 155);
+}
+
+.seccion2 .jugador{
+    margin-top: 2px;
+
+    font-size: 13px;
+
+    color: rgb(0, 0, 0);
+}
+
+/* Tercera sección */
+.seccion3 {
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    line-height: 1.5;
+
+    z-index: -67;
+
+    position: absolute;
+
+    left: -66px;
+    top: 219px;
+
+    width: 290px;
+    height: 70px;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    background-color: rgba(135, 11, 127, 0.649);
+    border: 5px solid #06338b;
+    
+    padding-top: 2px;
+    
+    border-radius: 10px 0 10px 5px;
+}
+.sede_mundial{
+    font-style: italic;
+    text-decoration: underline;
+    color: #ffffff;
+}

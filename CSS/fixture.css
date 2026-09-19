@@ -1,177 +1,473 @@
-.main {
-    background-color: rgb(116, 116, 116);
-    color:rgb(255, 255, 255);
+@font-face {
+    font-family:'FWC_Encabezado';
+    src: url(../FUENTE/FWC2026-NormalRegular.ttf);
 }
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:        
+        radial-gradient(circle at top,#003b8e 0%,#032751 40%,#041022 100%);
+
+    background-size:cover;
+    background-attachment:fixed;
+    font-size: 12px;
+    color:white;
+}
+
+.main{
+    width:95%;
+    max-width:1600px;
+    margin:auto;
+    padding:30px 0;
+}
+
+/* CADA GRUPO */
 
 .grupos{
-    
-    display: flex;
-    justify-content: flex-start;
-
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:40px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
 }
 
+/* CONTENEDORES */
 
-
-/* Asegura que las tablas respeten anchos fijos de celdas */
-.partidos_fase table,
-.tabla_fase table,
-.tabla_terceros{
-    table-layout: fixed;
+.celda_inicio_fase,
+.celda_medio_fase{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
 }
 
-/* Tamaño fijo y recorte para celdas iniciales y finales */
-td.celda_inicio,
-td.celda_final {
-    width: 200px;       /* ancho fijo igual para ambas */
-    min-width: 200px;
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    padding: 6px 8px;
-}
-
-/* Ajuste para las banderas dentro de esas celdas */
-td.celda_inicio img.banderas,
-td.celda_final img.banderas {
-    width: 28px;
-    height: 18px;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-
-
-
-.grupos
-{
-    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
-    width: 300px;        /* Ancho total de la tabla */
-    border-collapse: collapse; /* Une los bordes para que se vean bien */
-}
-
-.grupos td
-{
-    border: 1px solid rgb(0, 0, 0);
-    height: 50px;       /* Alto fijo de la celda */
-    width: 250px;       /* Ancho fijo de la celda */
-    overflow: hidden;   /* Oculta el texto que sobresalga */
-    white-space: nowrap; /* Evita que el texto salte de línea */
-    text-overflow: ellipsis; /* Añade tres puntos (...) si el texto es muy largo */
-}
-
-
+.partidos_fase,
 .tabla_fase,
-.tabla_terceros
-{
-    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
-    width: 300px;        /* Ancho total de la tabla */
-    border-collapse: collapse; /* Une los bordes para que se vean bien */
-}
-
-.tabla_fase td,
-.tabla_terceros td
-{
-    border: 1px solid rgb(0, 0, 0);
-    height: 50px;       /* Alto fijo de la celda */
-    width: 250px;       /* Ancho fijo de la celda */
-    overflow: hidden;   /* Oculta el texto que sobresalga */
-    white-space: nowrap; /* Evita que el texto salte de línea */
-    text-overflow: ellipsis; /* Añade tres puntos (...) si el texto es muy largo */
+.tabla_terceros{
+    flex:1;
+    min-width: 100px;
 }
 
 
 
-.partidos_fase{
-    font-size: 20px;
-    margin: 20px;
+/* TABLAS */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius: 15px;
 }
+tr{
+    transition: .25s;
+}
+
+tr:hover{
+    background:rgba(0,191,255,.15);
+}
+
+/* CELDAS */
+
+td{
+    padding: 8px;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(0,0,0,.25);
+}
+
+/* EQUIPO LOCAL */
 
 .celda_inicio{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+    font-family: 'FWC_Encabezado';
+    text-align:left;
+    font-weight: normal;
+    font-size: 13px;
 }
+
+/* RESULTADOS */
 
 .celda_medio{
-    padding: 10px 20px;
-    align-items: center;
+    font-family: 'FWC_Encabezado';
+    width:50px;
+    text-align:center;
+    font-size: 16px;
+    font-weight: normal;
+    color:#ffd700;
 }
+
+/* EQUIPO VISITANTE */
 
 .celda_final{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+    font-family: 'FWC_Encabezado';
+    text-align: left;
+    font-weight: normal;
 }
+
+/* BANDERAS */
 
 .banderas{
-    width: 40px;
-    margin-right: 10px;
+    width: 32px;
+    height: 22px;
+    object-fit:cover;
+    margin-right:10px;
+    vertical-align:middle;
+    border-radius: 3px;
+    box-shadow:
+        0 0 8px rgba(255,255,255,.4);
 }
 
-.tabla_fase,
-.tabla_terceros{
-    font-size: 20px;
-    margin: 50px;
+/* TITULOS DE GRUPO */
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2.5rem;
+    color:white;
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 20px #00bfff;
 }
 
-.celda_inicio_fase{
-    align-items: center;
-    padding: 10px 50px;
+/* TABLA DE POSICIONES */
+
+.tabla_fase table td:first-child{
+    min-width: 150px;
 }
 
-.celda_medio_fase{
-    align-items: center;
-    padding: 10px 20px;
+.tabla_fase table td:nth-child(2),
+.tabla_fase table td:nth-child(3),
+.tabla_fase table td:nth-child(4),
+.tabla_fase table td:nth-child(5),
+.tabla_fase table td:nth-child(6),
+.tabla_fase table td:nth-child(7),
+.tabla_fase table td:nth-child(8),
+.tabla_fase table td:nth-child(9),
+.tabla_fase table td:nth-child(10){
+    max-width: 48px;
+}
+
+.tabla_fase table tr:first-child,
+.tabla_terceros table tr:first-child{
+    font-size: 15px;
+    background:
+        linear-gradient(
+            90deg,
+            #0077ff,
+            #0067ff
+        );
+    font-weight:bold;
+}
+
+/* CLASIFICADOS */
+
+.tabla_fase table tr:nth-child(2),
+.tabla_fase table tr:nth-child(3){
+
+    background:
+        rgba(0, 247, 115, 0.2);
+}
+
+.tabla_fase table tr:nth-child(4){
+    background:
+        rgba(37, 0, 247, 0.2);
 }
 
 
 
+.tabla_fase table tr:nth-child(5){
 
-.grupos_fixture
-{
-    table-layout: fixed; /* Fuerza a la tabla a respetar los tamaños fijos */
-    width: 300px;        /* Ancho total de la tabla */
-    border-collapse: collapse; /* Une los bordes para que se vean bien */
+    background:
+        rgba(102, 102, 102, 0.2);
 }
 
-.grupos_fixture td{
+.tabla_terceros table tr:nth-child(2),
+.tabla_terceros table tr:nth-child(3),
+.tabla_terceros table tr:nth-child(4),
+.tabla_terceros table tr:nth-child(5),
+.tabla_terceros table tr:nth-child(6),
+.tabla_terceros table tr:nth-child(7),
+.tabla_terceros table tr:nth-child(8),
+.tabla_terceros table tr:nth-child(9){
+    background:
+        rgba(0, 247, 115, 0.2);
+}
+
+.tabla_terceros table tr:nth-child(10),
+.tabla_terceros table tr:nth-child(11),
+.tabla_terceros table tr:nth-child(12),
+.tabla_terceros table tr:nth-child(13){
+    background:
+        rgba(102, 102, 102, 0.2);
+
+}
+
+
+/* CONTENEDOR GENERAL */
+
+.fondo_fixture{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    flex-wrap:wrap;
+    justify-content:center;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.2),rgba(0, 255, 0, 0.2));
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.fixture_god{
+
+    position: relative;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+
+    gap:25px;
+
+    max-width:1200px;
+    margin:auto;
+    padding:25px;
+}
+
+/* CADA CASILLA */
+.vacio_god{
     
-    border: 1px solid rgb(0, 0, 0);
+    margin: 0px 0px;
+
+    color: rgba(255, 255, 255, 0);
+    
+    justify-content:center;
+    align-items:center;
+    
+    height: 20px;
+    
+    border: 4px solid rgba(255, 255, 255, 0);
 }
 
+.separacion_god{
+    
+    margin: 10px 0px;
+    height: 10px;
 
-
-.partidos_fase_fixture{
-    font-size: 20px;
-    margin: 20px;
-    font-size: 20px;
+    
+    border: 4px solid rgba(255, 255, 255, 0);
 }
 
-.celda_inicio_fixture{
-    display: flex;
+.partido_god{
+    margin: 7px 0px;
+    
+    justify-content:center;
+    align-items:center;
+    
+    height: 40px;
+    
+    border: 4px solid rgba(0, 68, 255, 0);
+
+    position: relative;
+}
+
+.equipo_god{
+
+    margin: 0px 0px;
+
+    display:flex;
+    align-items:center;
+
+    height: 20px;
+
+    border: 1px solid rgba(255, 238, 0, 0.349);
+    background: linear-gradient(rgb(0, 20, 40),rgb(0,20,60));
+    border-radius: 4px;
+
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+
+    padding: 8px 12px;
 }
 
-.celda_medio_fixture{
-    padding: 0px 10px;
-    align-items: center;
+.equipo_ganador{
+    color: rgb(255, 255, 0);
 }
 
-.celda_final_fixture{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px;
+.izquierda_god{
+    text-align: left;
 }
 
-.banderas_fixture{
-    width: 20px;
-    margin-right: 10px;
+.derecha_god{
+    text-align: right;
 }
 
-.fila_vacia{
-    background-color: black;
-    padding: 2px 0px;
+.seccion{
+    position: relative;
 }
+
+
+.seccion{
+    position: relative;
+}
+
+
+
+/*LLAVES DE OCTAVOS*/
+
+.octavos .seccion .partido_god:first-child::before,
+.octavos .seccion .partido_god:last-child::before,
+.octavos .seccion .partido_god:first-child::after,
+.cuartos .seccion .partido_god:first-child::before,
+.cuartos .seccion .partido_god:last-child::before,
+.cuartos .seccion .partido_god:first-child::after,
+.semifinal .seccion .partido_god:first-child::before,
+.semifinal .seccion .partido_god:last-child::before,
+.semifinal .seccion .partido_god:first-child::after,
+.final .seccion .partido_god:first-child::before,
+.final .seccion .partido_god_final:last-child::before,
+.final .seccion .partido_god:first-child::after{
+    content:"";
+    position:absolute;
+
+    border-top: 2px solid rgb(212, 212, 212);
+}
+
+.octavos .seccion::before,
+.cuartos .seccion::before,
+.semifinal .seccion::before,
+.final .seccion::before{
+    content:"";
+    position:absolute;
+
+    border-left: 2px solid rgb(212, 212, 212);
+}
+
+
+.octavos .seccion .partido_god:first-child::before{
+    left: -33px;
+    top: -4px;
+
+    width: 16px;
+}
+
+.octavos .seccion .partido_god:last-child::before{
+    left:-33px;
+    top: 43px;
+
+    width: 18px;
+}
+
+.octavos .seccion::before{
+    left:-13px;
+    top: 0px;
+
+    width:0;
+    height: 95px;
+}
+
+.octavos .seccion .partido_god:first-child::after{
+    left: -15px;
+    top: 42px;
+
+    width: 15px;
+}
+
+
+/*LLAVES DE CUARTOS*/
+
+.cuartos .seccion .partido_god:first-child::before{
+    left: -33px;
+    top: -52px;
+
+    width: 18px;
+}
+
+.cuartos .seccion .partido_god:last-child::before{
+    left: -33px;
+    top: 89px;
+
+    width: 18px;
+}
+
+.cuartos .seccion::before{
+    left:-13px;
+    top: -48px;
+
+    width:0;
+    height: 188px;
+}
+
+.cuartos .seccion .partido_god:first-child::after{
+    left: -15px;
+    top: 42px;
+
+    width: 15px;
+}
+
+
+
+/*LLAVES DE SEMIFINAL*/
+
+.semifinal .seccion .partido_god:first-child::before{
+    left: -33px;
+    top: -146px;
+
+    width: 18px;
+}
+
+.semifinal .seccion .partido_god:last-child::before{
+    left:-33px;
+    top: 184px;
+
+    width: 18px;
+}
+
+.semifinal .seccion::before{
+    left:-13px;
+    top: -142px;
+
+    width:0;
+    height: 378px;
+}
+
+.semifinal .seccion .partido_god:first-child::after{
+    left: -15px;
+    top: 42px;
+
+    width: 15px;
+}
+
+/*LLAVES DE FINAL*/
+
+
+
+.final .seccion .partido_god:first-child::before{
+    left: -33px;
+    top: -4px;
+
+    width: 17px;
+}
+
+.final .seccion .partido_god_final:last-child::before{
+    left: -29px;
+    top: 47px;
+
+    width: 17px;
+}
+
+.final .seccion::before{
+    left:-12px;
+    top: 0px;
+
+    width:0;
+    height: 49px;
+}
+
+.final .seccion .partido_god:first-child::after{
+    left: -15px;
+    top: 19px;
+
+    width: 16px;
+}
+

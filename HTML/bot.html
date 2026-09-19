@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Tanda de Penales</title>
+
+    <link rel="stylesheet" href="../../CSS/bot.css">
+</head>
+
+<body>
+
+    <h1>⚽ TANDA DE PENALES</h1>
+
+    <div class="marcador">
+        <div>
+            <span>GOLES</span>
+            <strong id="goles">0</strong>
+        </div>
+
+        <div>
+            <span>ATAJADAS</span>
+            <strong id="atajadas">0</strong>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ARCO -->
+        <div class="arco">
+
+            <div class="red">
+                <div class="zona" data-posicion="izquierda"></div>
+
+                <div class="zona" data-posicion="derecha"></div>
+            </div>
+
+            <div id="arquero">🧤</div>
+
+            <div id="pelota">⚽</div>
+
+        </div>
+
+        <div id="mensaje">
+            Elegí dónde patear
+        </div>
+
+        <!-- BOTONES -->
+        <div class="controles">
+
+            <h2>¿Dónde querés patear?</h2>
+
+            <div class="botones">
+
+                <button onclick="patear('izquierda')">
+                    ↖️<br>Izquierda<br>
+                </button>
+
+                <button>
+                </button>
+
+                <button onclick="patear('derecha')">
+                    ↗️<br>Derecha<br>
+                </button>
+
+            </div>
+
+        </div>
+
+        <button class="reiniciar" onclick="reiniciar()">
+            🔄 Reiniciar marcador
+        </button>
+
+    </main>
+
+    <script src="../../JAVASCRIPT/bot.js"></script>
+
+</body>
+
+</html>

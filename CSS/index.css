@@ -1,0 +1,782 @@
+
+@font-face {
+    font-family:'FWC_Encabezado';
+    src: url(/FUENTE/FWC2026-NormalRegular.ttf);
+}
+
+/* ===== FONDO GENERAL ===== */
+
+body{
+    margin: 0;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb,
+        #38bdf8
+    );
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.main{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ===== TITULOS ===== */
+
+.titulo,
+.titulo_panini{
+    text-align: center;
+    font-size: 4rem;
+    margin: 60px 0;
+    color: #fff;
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
+
+/* ===== TARJETAS ===== */
+
+.explicacion,
+.origen,
+.expansion_mundial,
+.guerra_mundial,
+.explicacion_panini,
+.copa_mundial,
+.era_moderna,
+.argentina{
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 25px;
+    padding: 35px;
+    margin: 40px 0;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 20px rgba(255,255,255,.1);
+
+    transition: .4s;
+}
+
+.explicacion:hover,
+.origen:hover,
+.explicacion_panini:hover,
+.expansion_mundial:hover,
+.guerra_mundial:hover,
+.copa_mundial:hover,
+.era_moderna:hover,
+.argentina:hover{
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        0 0 30px #00d9ff;
+}
+
+/* ===== SUBTITULOS ===== */
+
+.subtitulo,
+.subtitulo_panini,
+.titulo_argentina{
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(255,215,0,.8);
+}
+
+.subtitulo_argentina,
+.parrafo_titulo_panini{
+    color: #00ffb7;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ===== TEXTO ===== */
+
+.parrafo,
+.parrafo_panini{
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ===== LISTAS ===== */
+
+.lista,
+.lista_panini,
+.lista_argentina{
+    margin-top: 15px;
+    padding-left: 30px;
+}
+
+.lista li,
+.lista_panini li,
+.lista_argentina li{
+    margin: 10px 0;
+}
+
+/* ===== IMAGENES ===== */
+
+.imagen,
+.imagen_playa,
+.imagen_panini,
+.imagen_argentina{
+    
+    height: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 15px;
+
+
+    transition: .4s;
+}
+
+.imagen:hover,
+.imagen_playa:hover,
+.imagen_panini:hover,
+.imagen_argentina:hover{
+
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 10px #0066ff,
+        0 0 30px #0084ff,
+        0 0 50px #00d9ff;
+    
+    transform: translateY(-8px);
+
+    transform: scale(1.3);
+}
+
+.imagen_playa{
+    width: 535px;
+}
+
+/* ===== SEPARADOR FIFA / PANINI ===== */
+
+.degrade{
+    height: 12px;
+    border-radius: 999px;
+    margin: 70px 0;
+
+    background: linear-gradient(
+        90deg,
+        #00d9ff,
+        #00ffb7,
+        #ffd700,
+        #ff5e00,
+        #ff006a
+    );
+
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 30px #ff006a;
+}
+
+/* ===== ARGENTINA ===== */
+
+.argentina{
+    border: 3px solid #6ec6ff;
+}
+
+.titulo_argentina{
+    color: #6ec6ff;
+}
+
+/* TARJETA ORIGEN FIFA */
+
+.origen {
+    position: relative;
+
+    width: 100%;
+    height: 740px;
+
+    margin: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
+        url(../PNG/Fifa/paris_siglo_xx.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SECCIÓN 1 */
+.origen-1 {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 1200px;
+    height: 100px;
+
+    margin-top: 20px;
+
+    background-color: #2564eb00;
+}
+.origen-1 h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 50px;
+}
+
+/* SECCIÓN 2 */
+.origen-2 {
+    position: absolute;
+
+    top: 170px;
+    left: 80px;
+
+    width: 450px;
+    height: 400px;
+
+    padding: 20px;
+
+    background-color: #9a9a9a9d;
+
+    
+}
+.origen-2 p{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* SECCIÓN 3 */
+.origen-3 {
+    position: absolute;
+
+    top: 110px;
+    left: 690px;
+
+    width: 350px;
+    height: 250px;
+
+    background-color: #ffffff40;
+}
+.origen-3 img{
+    width: 90%;
+    height: 90%;
+}
+
+/* SECCIÓN 4 */
+.origen-4 {
+    position: absolute;
+
+    top: 400px;
+    left: 610px;
+
+    width: 500px;
+    height: 285px;
+
+    background-color: #ffffff40;
+}
+.origen-4 img{
+    width: 90%;
+    height: 90%;
+}
+
+.pareja {
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+/* EXPANSION MUNDIAL*/
+
+.expansion_mundial{
+    position: absolute;
+
+    width: 40%;
+    height: 760px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECCIÓN 1 */
+.expansion_mundial-1 {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100px;
+
+    margin-top: 20px;
+
+    background-color: #2564eb00;
+}
+.expansion_mundial-1 h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 45px;
+}
+
+/* SECCIÓN 2 */
+.expansion_mundial-2 {
+    position: absolute;
+
+    top: 60px;
+    left: 0px;
+
+    width: 100%;
+    height: 300px;
+
+    padding: 50px;
+}
+.expansion_mundial-2 p{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* SECCIÓN 3 */
+.expansion_mundial-3 {
+    position: absolute;
+
+    top: 340px;
+    left: 0px;
+
+    width: 100%;
+    height: 390px;
+}
+.expansion_mundial-3 img{
+    width: 90%;
+    height: 90%;
+}
+
+
+/* GUERRA MUNDIAL*/
+.guerra_mundial{
+    left: 50%;
+
+    position: relative;
+
+    width: 50%;
+    height: 760px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECCIÓN 1 */
+.guerra_mundial-1 {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100px;
+
+    margin-top: 40px;
+
+    background-color: #2564eb00;
+}
+.guerra_mundial-1 h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 45px;
+}
+
+/* SECCIÓN 2 */
+.guerra_mundial-2 {
+    position: absolute;
+
+    top: 150px;
+    left: 0px;
+
+    width: 100%;
+    height: 200px;
+
+    padding: 50px;
+}
+.guerra_mundial-2 p{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* SECCIÓN 3 */
+.guerra_mundial-3 {
+    position: absolute;
+
+    top: 340px;
+    left: 0px;
+
+    width: 100%;
+    height: 390px;
+}
+.guerra_mundial-3 img{
+    width: 70%;
+    height: 90%;
+}
+
+.copa_mundial {
+    position: relative;
+
+    width: 100%;
+    height: 740px;
+
+    margin: 40px auto;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
+        url(../PNG/Fifa/estadio_maracana.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SECCIÓN 1 */
+.copa_mundial-1 {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 1200px;
+    height: 100px;
+
+    margin-top: 20px;
+
+    background-color: #2564eb00;
+}
+.copa_mundial-1 h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 50px;
+}
+
+/* SECCIÓN 2 */
+.copa_mundial-2 {
+    position: absolute;
+
+    top: 120px;
+    left: 45px;
+
+    width: 92%;
+    height: 200px;
+
+    padding: 20px;
+
+    background-color: #9a9a9a9d;
+}
+.copa_mundial-2 p{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* SECCIÓN 3 */
+.copa_mundial-3 {
+    position: absolute;
+
+    top: 350px;
+    left: 175px;
+
+    width: 300px;
+    height: 320px;
+
+    background-color: #ffcc0061;
+}
+.copa_mundial-3 p,
+.copa_mundial-3 ul{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* SECCIÓN 4 */
+.copa_mundial-4 {
+    position: absolute;
+
+    top: 350px;
+    left: 610px;
+
+    width: 500px;
+    height: 320px;
+
+}
+.copa_mundial-4 img{
+    width: 90%;
+    height: 90%;
+}
+
+/* ERA MODERNA */
+.era_moderna h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 50px;
+}
+.era_moderna p,
+.era_moderna ul{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 20px;
+}
+
+.pareja2{
+    height: 720px;
+}
+
+/* CONTROVERSIAS */
+.controversias,
+.dato_curioso{
+    height: 720px;
+    margin: 0;
+}
+.controversias img {
+    width: 80%;
+    height: 70%;
+}
+.controversias .expansion_mundial-2 {
+    top: 100px;
+}
+
+/* DATO CURIOSO */
+.dato_curioso img {
+    width: 40%;
+    height: 75%;
+}
+.dato_curioso .guerra_mundial-1 {
+    margin-top: 20px;
+}
+.dato_curioso .guerra_mundial-2 {
+    top: 130px;
+}
+
+/* FIFA HOY */
+.fifa_hoy {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
+        url(../PNG/Fifa/sede_zurich_fifa.png);
+        
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fifa_hoy h3{
+     font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 50px;
+}
+
+.fifa_hoy p {
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+
+.fifa_hoy .parrafo {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff35;
+}
+
+.fifa_hoy .infantino2 {
+    margin-left: 32px;
+}
+
+.fifa_hoy .infantino {
+    margin-left: 180px;
+}
+
+/* TARJETA ARGENTINA */
+
+.argentina {
+    position: relative;
+
+    width: 100%;
+    height: 600px;
+
+    margin: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.564)),
+        url(../PNG/Fifa/sede_1978.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SECCIÓN 1 */
+.argentina-1 {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 1200px;
+    height: 100px;
+
+    margin-top: 20px;
+
+    background-color: #2564eb00;
+}
+.argentina-1 h3{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 50px;
+}
+
+/* SECCIÓN 2 */
+
+
+.argentina-2,
+.argentina-5 {
+    position: absolute;
+
+    top: 100px;
+    left: 0px;
+
+    width: 450px;
+    min-height: 200px;
+    max-height: 250px;
+
+
+    background-color: #ffffff11;
+}
+.argentina-2 p,
+.argentina-5 p{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    
+    width: 450px;
+    height: 50px;
+
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+.argentina-2 ul,
+.argentina-5 ul{
+    position: absolute;
+
+    top: 50px;
+    left: 0px;
+    
+    width: 450px;
+    height: 50px;
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* SECCIÓN 3 */
+.argentina-3 {
+    position: absolute;
+
+    top: 450px;
+    left: 455px;
+
+    width: 750px;
+    height: 100px;
+
+    background-color: #ffffff40;
+}
+.argentina-3 .subtitulo_argentina{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    
+    width: 750px;
+    height: 40px;
+
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+.argentina-3 p{
+    position: absolute;
+
+    top: 60px;
+    left: 0px;
+    
+    width: 750px;
+    height: 50px;
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* SECCIÓN 4 */
+.argentina-4 {
+    position: absolute;
+
+    top: 100px;
+    left: 600px;
+
+    width: 500px;
+    height: 330px;
+
+
+    background-color: #9a9a9a9d;
+}
+.argentina-4 p{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    
+    width: 500px;
+    height: 50px;
+
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+.argentina-4 ul{
+    font-family: 'FWC_Encabezado';
+    font-weight: normal;
+    text-align: left;
+    font-size: 18px;
+}
+
+.argentina-5{
+    top: 350px;
+}
+/* ESTILOS GENERALES */
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    border-radius: 8px;
+}
