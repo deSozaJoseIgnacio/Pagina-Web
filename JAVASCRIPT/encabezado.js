@@ -34,6 +34,7 @@ if (rutaActual.includes("/paginas_del_album/")) {
     if (album) {
         album.classList.add("pagina-actual");
     }
+<<<<<<< HEAD
 }
 
 const btnVolverArriba = document.getElementById('btnVolverArriba');
@@ -58,3 +59,6 @@ btnVolverArriba.addEventListener('click', () => {
 
 
 
+=======
+}
+>>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4

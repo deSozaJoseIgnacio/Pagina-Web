@@ -318,6 +318,7 @@
 
 
 
+<<<<<<< HEAD
 /* =========================
    FOOTER
 ========================= */
@@ -338,6 +339,78 @@
     left: 0;
     width: 100%;
     height: 4px;
+=======
+.pie_de_pagina{
+    font-family: 'FWC_Encabezado';
+    font-size: 15px;
+    background-color: rgb(63, 0, 0);
+    color: white;
+}
+
+
+.pie_de_pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 25px 40px;
+    margin-top: 50px;
+    border-top: 3px solid #444;
+}
+
+.izquierda, 
+.derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.izquierda p, 
+.derecha p {
+    margin: 0;
+}
+
+.izquierda p:first-child,
+.derecha p:first-child {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #f0c040;
+}
+
+.imagen_pie_de_pagina {
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.derecha p {
+    display: flex;
+    align-items: center;
+}
+
+
+.pie_de_pagina{
+    margin-top: 70px;
+
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(20px);
+
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.pie_de_pagina::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 100%;
+    height: 4px;
+
+>>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
     background: linear-gradient(
         90deg,
         #00d9ff,
@@ -347,6 +420,7 @@
         #ff006a
     );
 }
+<<<<<<< HEAD
 
 .footer-container {
     display: grid;
@@ -530,4 +604,24 @@
 /* Efecto al hacer clic */
 .btn-volver-arriba:active {
     transform: translateY(0);
+=======
+.izquierda,
+.derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.izquierda p:first-child,
+.derecha p:first-child{
+    color: #ffd700;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.imagen_pie_de_pagina{
+    width: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+>>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
 }

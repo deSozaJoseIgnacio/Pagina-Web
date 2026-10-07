@@ -1,6 +1,10 @@
 const album = JSON.parse(localStorage.getItem("album")) || {};
 
+<<<<<<< HEAD
 const TOTAL_FIGURITAS = 980;  //Se define en TOTAL_FIGURITAS la cantidad de figuritas totales que tiene el album (979)
+=======
+const TOTAL_FIGURITAS = 979;  //Se define en TOTAL_FIGURITAS la cantidad de figuritas totales que tiene el album (979)
+>>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
 
 const valores = Object.values(album); 
 
