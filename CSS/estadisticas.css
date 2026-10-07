@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'FWC_Encabezado';
+    src: url(../FUENTE/FWC2026-NormalRegular.ttf);
+}
+
 .equipo img{
     transition: .3s;
 }
@@ -7,6 +12,7 @@
 }
 
 .instancia.activa{
+    font-family: 'FWC_Encabezado';
     background:#000;
     color:white;
 }
@@ -78,6 +84,7 @@ body{
 /* BOTONES */
 
 .instancia{
+    font-family: 'FWC_Encabezado';
     background: linear-gradient(
         180deg,
         #1e3a5f 0%,
@@ -91,7 +98,6 @@ body{
     padding: 12px 20px;
 
     font-size: 15px;
-    font-weight: 600;
 
     cursor: pointer;
 
@@ -227,6 +233,7 @@ body{
 /* TOOLTIP */
 
 .plegable{
+    
 
     position:absolute;
 
@@ -278,13 +285,14 @@ body{
 
 .plegable h3{
 
+    font-family: 'FWC_Encabezado';
     text-align:center;
 
     color:#ffd700;
 
     margin-bottom:15px;
 
-    font-size:1.3rem;
+    font-size:1.1rem;
 
     text-shadow:
         0 0 8px #ffd700;
@@ -307,11 +315,14 @@ body{
 
     font-size:.92rem;
 
+    font-weight: bold;
 }
 
 .plegable strong{
 
+    font-family: 'FWC_Encabezado';
     color:#00bfff;
+    font-weight: normal;
 
 }
 
@@ -362,6 +373,7 @@ body{
 
 /* Títulos */
 .card h2{
+    font-family: 'FWC_Encabezado';
     margin:0 0 18px;
     font-size:1.3rem;
     color:#ffd54a;

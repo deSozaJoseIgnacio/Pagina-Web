@@ -1,0 +1,90 @@
+.can{
+    width: 250px;
+    height: 50px;
+    color: red;
+    font-family: 'FWC_Textos';
+    font-size: 40px;
+}
+
+.usa{
+    margin-bottom: 20px;
+    width: 530px;
+    color: rgb(0, 102, 255);
+    font-family: 'FWC_Textos';
+    font-size: 40px;
+}
+
+.mex{
+    width: 220px;
+    height: 50px;
+    color: rgb(15, 153, 15);
+    font-family: 'FWC_Textos';
+    font-size: 40px;
+}
+
+
+.vacio_sede li,
+.vacio_sede_usa_izquierda li,
+.vacio_sede_usa_derecha li{
+    width: 260px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "FWC_Textos";
+}
+
+.toronto{
+    color: rgb(134, 196, 53);
+}
+
+.monterrey{
+    color:#00a76f;
+}
+
+.guadalajara{
+    color:rgb(202, 23, 107)
+}
+
+.mexcity{
+    color:rgb(46, 44, 190)
+}
+
+.atlanta{
+    color:rgb(58, 230, 236)
+}
+
+.boston{
+    color:rgb(26, 92, 12)
+}
+
+.dallas{
+    color:rgb(14, 93, 99)
+}
+
+.houston{
+    color:rgb(0, 94, 172)
+}
+
+.kansas{
+    color:rgb(185, 8, 8)
+}
+
+.losangeles{
+    color:rgb(187, 76, 12)
+}
+
+.miami{
+    color:rgb(209, 150, 211)
+}
+
+.philadelphia{
+    color:rgb(80, 177, 140)
+}
+
+.sanfrancisco{
+    color:rgb(150, 56, 27)
+}
+
+
+.seattle{
+    color:rgb(104, 94, 5)
+}

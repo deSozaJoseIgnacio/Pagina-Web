@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            180deg,
+            #075c2c,
+            #0b8f43
+        );
+}
+
+/* ---------------- TITULO ---------------- */
+
+h1 {
+    margin: 0;
+
+    padding: 25px;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    text-shadow: 3px 3px 5px #000;
+}
+
+/* ---------------- MARCADOR ---------------- */
+
+.marcador {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    margin: 20px;
+}
+
+.marcador div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.marcador span {
+    font-size: 14px;
+}
+
+.marcador strong {
+    font-size: 35px;
+
+    color: #ffe600;
+}
+
+/* ---------------- ARCO ---------------- */
+
+.arco {
+    position: relative;
+
+    width: 600px;
+    height: 350px;
+
+    margin: 20px auto;
+
+    background: #188c3f;
+
+    border: 15px solid white;
+
+    border-bottom: 25px solid white;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4);
+
+    overflow: hidden;
+}
+
+/* Red */
+
+.red {
+    position: absolute;
+
+    inset: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 25px,
+            rgba(255,255,255,0.25) 26px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 25px,
+            rgba(255,255,255,0.25) 26px
+        );
+}
+
+.zona {
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ---------------- ARQUERO ---------------- */
+
+#arquero {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    font-size: 80px;
+
+    z-index: 5;
+
+    transition:
+        left 0.5s ease,
+        bottom 0.5s ease,
+        transform 0.5s ease;
+}
+
+/* ---------------- PELOTA ---------------- */
+
+#pelota {
+    position: absolute;
+
+    left: 50%;
+    bottom: -35px;
+
+    transform: translateX(-50%);
+
+    font-size: 35px;
+
+    z-index: 10;
+
+    transition:
+        left 0.5s ease,
+        bottom 0.5s ease;
+}
+
+/* ---------------- MENSAJE ---------------- */
+
+#mensaje {
+    min-height: 35px;
+
+    margin: 15px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* ---------------- BOTONES ---------------- */
+
+.controles {
+    margin: 20px auto;
+
+    max-width: 650px;
+}
+
+.controles h2 {
+    font-size: 20px;
+}
+
+.botones {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.botones button {
+    padding: 15px;
+
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botones button:hover {
+    background: #ffe600;
+
+    color: black;
+
+    transform: scale(1.05);
+}
+
+.botones button:active {
+    transform: scale(0.95);
+}
+
+/* ---------------- REINICIAR ---------------- */
+
+.reiniciar {
+    margin: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.reiniciar:hover {
+    background: #444;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 700px) {
+
+    .arco {
+        width: 90%;
+        height: 250px;
+    }
+
+    .botones {
+        padding: 10px;
+    }
+
+    .marcador {
+        gap: 40px;
+    }
+
+}
