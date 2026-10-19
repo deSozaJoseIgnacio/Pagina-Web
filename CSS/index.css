@@ -214,11 +214,7 @@ body{
     top: 0px;
     left: 0px;
 
-<<<<<<< HEAD
     width: 100%;
-=======
-    width: 1200px;
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
     height: 100px;
 
     margin-top: 20px;
@@ -455,11 +451,7 @@ body{
     top: 0px;
     left: 0px;
 
-<<<<<<< HEAD
     width: 100%;
-=======
-    width: 1200px;
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
     height: 100px;
 
     margin-top: 20px;
@@ -541,11 +533,7 @@ body{
 .era_moderna ul{
     font-family: 'FWC_Encabezado';
     font-weight: normal;
-<<<<<<< HEAD
     text-align: justify;
-=======
-    text-align: left;
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
     font-size: 20px;
 }
 
@@ -673,11 +661,7 @@ body{
     max-height: 250px;
 
 
-<<<<<<< HEAD
     background-color: #ffffff40;
-=======
-    background-color: #ffffff11;
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
 }
 .argentina-2 p,
 .argentina-5 p{
@@ -760,11 +744,7 @@ body{
     height: 330px;
 
 
-<<<<<<< HEAD
     background-color: #ffffff40;
-=======
-    background-color: #9a9a9a9d;
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
 }
 .argentina-4 p{
     position: absolute;
@@ -790,7 +770,6 @@ body{
 .argentina-5{
     top: 350px;
 }
-<<<<<<< HEAD
 
 .origen_panini{
     padding: 40px;
@@ -829,8 +808,6 @@ body{
     height: 50%;
 }
 
-=======
->>>>>>> c052072d1616993420ee06891d81a8ec57a79aa4
 /* ESTILOS GENERALES */
 .seccion {
     display: flex;
