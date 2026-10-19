@@ -348,8 +348,8 @@
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: 25% 25% 20% 30%;
+    gap: 0;
     padding: 50px 60px;
     max-width: 1600px;
     margin: 0 auto;
