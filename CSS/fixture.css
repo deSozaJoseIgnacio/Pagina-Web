@@ -4,8 +4,10 @@
 }
 
 body{
+    margin: 0;
+    padding-top: 70px;
     font-family: 'Segoe UI', sans-serif;
-    background:        
+    background:
         radial-gradient(circle at top,#003b8e 0%,#032751 40%,#041022 100%);
 
     background-size:cover;
@@ -473,5 +475,122 @@ h2{
     top: 19px;
 
     width: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .main{
+        width: 98%;
+        padding: 20px 0;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .grupos{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .fixture_god{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .partidos_fase,
+    .tabla_fase,
+    .tabla_terceros{
+        min-width: 150px;
+    }
+
+    td{
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .celda_inicio,
+    .celda_final{
+        font-size: 11px;
+    }
+
+    .celda_medio{
+        font-size: 14px;
+    }
+
+    .banderas{
+        width: 25px;
+        height: 18px;
+    }
+
+    .equipo_god{
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+@media(max-width:480px){
+
+    .main{
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .grupos{
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .fixture_god{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .partidos_fase,
+    .tabla_fase,
+    .tabla_terceros{
+        min-width: 100%;
+    }
+
+    td{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .celda_inicio,
+    .celda_final{
+        font-size: 10px;
+    }
+
+    .celda_medio{
+        font-size: 12px;
+        width: 40px;
+    }
+
+    .banderas{
+        width: 20px;
+        height: 14px;
+    }
+
+    .equipo_god{
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    .partido_god{
+        height: 35px;
+    }
 }
 

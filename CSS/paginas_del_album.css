@@ -18,6 +18,7 @@ ESTILOS GENERALES
 
 body{
     margin: 0;
+    padding-top: 70px;
     font-family: 'Segoe UI', sans-serif;
     color: white;
 }
@@ -682,6 +683,216 @@ td:last-child{
     color: #ffd700;
 }
 
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media(max-width:768px){
+
+    main{
+        width: 98%;
+        padding: 20px 0;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .cabecera_album{
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .Izquierda,
+    .Derecha{
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .boton_album{
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .figuritas{
+        grid-template-columns: repeat(4,144px);
+        gap: 10px;
+    }
+
+    .figuritas_historia{
+        grid-template-columns: repeat(2,130px);
+        grid-template-rows: auto;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .grupo_1,
+    .grupo_2,
+    .grupo_3,
+    .grupo_4,
+    .grupo_5,
+    .grupo_6,
+    .grupo_7,
+    .grupo_8{
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .bandera_pais{
+        grid-column: 1 / span 2;
+        grid-row: auto;
+        max-width: 200px;
+        max-height: 150px;
+    }
+
+    .contador_java:has(.contador_horizontal){
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .contador_java:has(.contador_horizontal_2){
+        grid-column: span 2;
+    }
+
+    .contador_java:has(.contador_sede){
+        grid-column: span 2;
+    }
+
+    .contador_java:has(.contador_sede_horizontal){
+        grid-column: span 2;
+    }
+
+    .contador_java:has(.contador_sede_horizontal_sin_botones){
+        grid-column: span 2;
+    }
+
+    .vacio_sede_usa{
+        grid-column: span 2;
+    }
+
+    .equipo{
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    section{
+        padding: 20px;
+    }
+}
+
+@media(max-width:480px){
+
+    main{
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .cabecera_album{
+        margin: 20px 0;
+    }
+
+    .figuritas{
+        grid-template-columns: repeat(2,144px);
+        gap: 8px;
+    }
+
+    .figuritas_historia{
+        grid-template-columns: 1fr;
+    }
+
+    .grupo_1,
+    .grupo_2,
+    .grupo_3,
+    .grupo_4,
+    .grupo_5,
+    .grupo_6,
+    .grupo_7,
+    .grupo_8{
+        grid-column: span 1;
+    }
+
+    .bandera_pais{
+        grid-column: span 1;
+        max-width: 150px;
+        max-height: 120px;
+    }
+
+    .contador_java:has(.contador_horizontal){
+        grid-column: span 1;
+    }
+
+    .contador_java:has(.contador_horizontal_2){
+        grid-column: span 1;
+    }
+
+    .contador_java:has(.contador_sede){
+        grid-column: span 1;
+    }
+
+    .contador_java:has(.contador_sede_horizontal){
+        grid-column: span 1;
+    }
+
+    .contador_java:has(.contador_sede_horizontal_sin_botones){
+        grid-column: span 1;
+    }
+
+    .vacio_sede_usa{
+        grid-column: span 1;
+    }
+
+    .contador,
+    .contador_sede{
+        width: 100px;
+    }
+
+    .contador_horizontal,
+    .contador_horizontal_2,
+    .contador_horizontal_2_sede,
+    .contador_sede_horizontal{
+        width: 180px;
+        height: 180px;
+    }
+
+    .contador_horizontal img,
+    .contador_horizontal_2 img,
+    .contador_horizontal_2_sede img,
+    .contador_sede_horizontal img{
+        width: 170px;
+    }
+
+    .contador_sede_horizontal_sin_botones{
+        width: 180px;
+        height: 150px;
+    }
+
+    .contador_sede_horizontal_sin_botones img{
+        width: 170px;
+    }
+
+    .contador_sede{
+        height: 220px;
+    }
+
+    .equipo{
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    section{
+        padding: 15px;
+    }
+
+    .partido{
+        margin: 15px auto;
+    }
+}
 
 /* ==================================================
 SELECCIONES

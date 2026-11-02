@@ -19,8 +19,9 @@
 
 body{
     margin: 0;
+    padding-top: 70px;
     font-family: 'Segoe UI', sans-serif;
-    
+
     background:
         radial-gradient(circle at top,#143c74 0%,#081422 45%,#02060c 100%);
 
@@ -467,4 +468,155 @@ section img{
     border-radius: 10px;
     width: 500px;
 
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .main{
+        padding: 25px;
+    }
+
+    .grilla_siete{
+        grid-template-columns: repeat(4,140px);
+        gap: 20px;
+    }
+
+    .grilla_ocho{
+        grid-template-columns: repeat(4,140px);
+        gap: 15px;
+        padding: 30px 0;
+    }
+
+    .estadisticas{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .medio{
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .card{
+        padding: 15px;
+    }
+
+    .card h2{
+        font-size: 1.1rem;
+    }
+
+    .instancia{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .equipo,
+    .equipo_izquierda{
+        width: 100px;
+        height: 60px;
+    }
+
+    .plegable{
+        width: 220px;
+        padding: 15px;
+    }
+
+    .plegable h3{
+        font-size: 1rem;
+    }
+
+    .plegable p{
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width:480px){
+
+    .main{
+        padding: 15px;
+    }
+
+    .grilla_siete{
+        grid-template-columns: repeat(2,140px);
+        gap: 15px;
+    }
+
+    .grilla_ocho{
+        grid-template-columns: repeat(2,140px);
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .estadisticas{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .medio{
+        grid-column: span 1;
+    }
+
+    .card{
+        padding: 12px;
+    }
+
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .instancia{
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .equipo,
+    .equipo_izquierda{
+        width: 80px;
+        height: 48px;
+    }
+
+    .plegable{
+        width: 180px;
+        padding: 12px;
+        left: 105%;
+    }
+
+    .equipo_izquierda .plegable{
+        right: 105%;
+    }
+
+    .plegable h3{
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .plegable p{
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+    .premio p{
+        font-size: 1.2rem;
+    }
+
+    .jugador img{
+        width: 22px;
+        height: 16px;
+    }
+
+    section img{
+        width: 120px;
+    }
+
+    .premio_2{
+        width: 150px;
+    }
+
+    .premio_3{
+        width: 100%;
+    }
 }

@@ -5,25 +5,74 @@
 
 body{
     margin: 0;
+    padding-top: 70px;
     font-family: 'Segoe UI', sans-serif;
-    
+
     background:
-        radial-gradient(circle at top,#143c74 0%,#081422 45%,#02060c 100%);
+        radial-gradient(ellipse at 20% 20%, rgba(0, 217, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(255, 0, 106, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(0, 255, 183, 0.08) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0f0f2f 100%);
 
     background-attachment: fixed;
     color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(90deg, transparent 98%, rgba(0, 217, 255, 0.03) 100%),
+        linear-gradient(0deg, transparent 98%, rgba(0, 217, 255, 0.03) 100%);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .estadisticas{
     width: 550px;
     margin: 40px auto;
     padding: 30px;
-    background: #1b1b1b;
-    border: 2px solid #2d6cdf;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(0, 217, 255, 0.3);
     border-radius: 15px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 0 15px rgba(0,0,0,.4);
+    box-shadow:
+        0 0 15px rgba(0,0,0,.4),
+        0 0 30px rgba(0, 217, 255, 0.2),
+        inset 0 0 20px rgba(0, 217, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+.estadisticas:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 0 20px rgba(0,0,0,.4),
+        0 0 40px rgba(0, 217, 255, 0.3),
+        inset 0 0 30px rgba(0, 217, 255, 0.1);
+    border-color: rgba(0, 217, 255, 0.6);
 }
 
 .estadisticas h2{
@@ -32,7 +81,15 @@ body{
     text-align: center;
     color: #ffd54f;
     margin-bottom: 25px;
+    text-shadow:
+        0 0 10px rgba(255, 213, 79, 0.8),
+        0 0 20px rgba(255, 213, 79, 0.6),
+        0 0 30px rgba(255, 213, 79, 0.4);
+    letter-spacing: 2px;
+    position: relative;
+    animation: titleGlow 2s ease-in-out infinite alternate;
 }
+
 
 .estadisticas ul{
     list-style: disc;
@@ -46,9 +103,70 @@ body{
     font-size: 25px;
     margin: 30px 0;
     line-height: 1.5;
+    transition: .3s;
+    position: relative;
+}
+
+.estadisticas li:hover {
+    transform: translateX(10px);
+    color: #00d9ff;
 }
 
 .estadisticas span{
     color: #4fc3f7;
     font-weight: normal;
+    text-shadow:
+        0 0 10px rgba(79, 195, 247, 0.8),
+        0 0 20px rgba(79, 195, 247, 0.6);
+    transition: .3s;
+}
+
+.estadisticas span:hover {
+    color: #00d9ff;
+    text-shadow:
+        0 0 15px rgba(0, 217, 255, 0.8),
+        0 0 30px rgba(0, 217, 255, 0.6),
+        0 0 45px rgba(0, 217, 255, 0.4);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .estadisticas{
+        width: 90%;
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    .estadisticas h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .estadisticas li{
+        font-size: 20px;
+        margin: 25px 0;
+    }
+}
+
+@media(max-width:480px){
+
+    .estadisticas{
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .estadisticas h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .estadisticas li{
+        font-size: 16px;
+        margin: 20px 0;
+    }
 }

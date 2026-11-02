@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    padding-top: 70px;
 
     min-height: 100vh;
 
@@ -245,19 +246,105 @@ h1 {
 
 /* ---------------- RESPONSIVE ---------------- */
 
-@media (max-width: 700px) {
+@media(max-width:768px){
 
-    .arco {
+    h1{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    .marcador{
+        gap: 40px;
+    }
+
+    .marcador strong{
+        font-size: 28px;
+    }
+
+    .arco{
         width: 90%;
         height: 250px;
     }
 
-    .botones {
+    #arquero{
+        font-size: 60px;
+    }
+
+    #pelota{
+        font-size: 28px;
+    }
+
+    #mensaje{
+        font-size: 18px;
+    }
+
+    .controles{
+        max-width: 90%;
+    }
+
+    .botones button{
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:480px){
+
+    h1{
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .marcador{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .marcador strong{
+        font-size: 24px;
+    }
+
+    .arco{
+        width: 95%;
+        height: 200px;
+        border-width: 10px;
+        border-bottom-width: 15px;
+    }
+
+    #arquero{
+        font-size: 50px;
+        bottom: 15px;
+    }
+
+    #pelota{
+        font-size: 24px;
+        bottom: -25px;
+    }
+
+    #mensaje{
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .controles{
+        max-width: 95%;
+    }
+
+    .controles h2{
+        font-size: 16px;
+    }
+
+    .botones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .botones button{
         padding: 10px;
+        font-size: 12px;
     }
 
-    .marcador {
-        gap: 40px;
+    .reiniciar{
+        padding: 10px 20px;
+        font-size: 13px;
     }
-
 }

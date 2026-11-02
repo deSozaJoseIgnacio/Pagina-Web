@@ -8,6 +8,7 @@
 
 body{
     margin: 0;
+    padding-top: 70px;
     background: linear-gradient(
         135deg,
         #0f172a,
@@ -201,7 +202,7 @@ body{
 
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
-        url(../PNG/Fifa/paris_siglo_xx.png);
+        url(../PNG/Fifa/paris_siglo_xx.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -438,7 +439,7 @@ body{
 
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
-        url(../PNG/Fifa/estadio_maracana.png);
+        url(../PNG/Fifa/estadio_maracana.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,7 +572,7 @@ body{
 .fifa_hoy {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.4)),
-        url(../PNG/Fifa/sede_zurich_fifa.png);
+        url(../PNG/Fifa/sede_zurich_fifa.webp);
         
     background-size: cover;
     background-position: center;
@@ -619,7 +620,7 @@ body{
 
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.564)),
-        url(../PNG/Fifa/sede_1978.png);
+        url(../PNG/Fifa/sede_1978.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -775,7 +776,7 @@ body{
     padding: 40px;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(../PNG/Panini/sede_museo_panini.png);
+        url(../PNG/Panini/sede_museo_panini.webp);
 }
 
 .origen_panini .org_pan {
@@ -817,4 +818,145 @@ body{
     color: white;
 
     border-radius: 8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .main{
+        width: 95%;
+    }
+
+    .titulo,
+    .titulo_panini{
+        font-size: 2.5rem;
+        margin: 40px 0;
+    }
+
+    .explicacion,
+    .origen,
+    .expansion_mundial,
+    .guerra_mundial,
+    .copa_mundial,
+    .era_moderna,
+    .argentina{
+        padding: 25px;
+        margin: 30px 0;
+    }
+
+    .pareja{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .expansion_mundial,
+    .guerra_mundial{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .expansion_mundial-1 h3,
+    .guerra_mundial-1 h3,
+    .copa_mundial-1 h3,
+    .origen-1 h3,
+    .argentina-1 h3{
+        font-size: 30px;
+    }
+
+    .expansion_mundial-2 p,
+    .guerra_mundial-2 p,
+    .copa_mundial-2 p,
+    .origen-2 p{
+        font-size: 16px;
+    }
+
+    .imagen,
+    .imagen_panini{
+        height: 200px;
+    }
+
+    .pareja2{
+        height: auto;
+    }
+
+    .controversias,
+    .dato_curioso{
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:480px){
+
+    .titulo,
+    .titulo_panini{
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+
+    .subtitulo,
+    .subtitulo_panini,
+    .titulo_argentina{
+        font-size: 1.5rem;
+    }
+
+    .parrafo,
+    .parrafo_panini{
+        font-size: 1rem;
+    }
+
+    .explicacion,
+    .origen,
+    .expansion_mundial,
+    .guerra_mundial,
+    .copa_mundial,
+    .era_moderna,
+    .argentina{
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .imagen,
+    .imagen_panini{
+        height: 150px;
+    }
+
+    .origen-2{
+        top: 120px;
+        left: 10px;
+        width: 90%;
+    }
+
+    .origen-3{
+        top: 250px;
+        left: 10px;
+        width: 90%;
+    }
+
+    .origen-4{
+        top: 420px;
+        left: 10px;
+        width: 90%;
+    }
+
+    .argentina-2,
+    .argentina-5{
+        width: 90%;
+        left: 5%;
+    }
+
+    .argentina-3{
+        width: 90%;
+        left: 5%;
+    }
+
+    .argentina-4{
+        width: 90%;
+        left: 5%;
+    }
 }

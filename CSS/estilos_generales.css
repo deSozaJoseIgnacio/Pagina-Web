@@ -16,8 +16,10 @@
 
 .encabezado{
     font-size: 15px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     background: linear-gradient(
         90deg,
@@ -275,45 +277,6 @@
     border-radius: 20px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:900px){
-
-    .principal{
-        flex-wrap: wrap;
-    }
-
-    .secundario{
-
-        width: 90vw;
-
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media(max-width:600px){
-
-    .principal{
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .botonencabezado{
-        width: 100%;
-        text-align: center;
-    }
-
-    .secundario{
-        width: 95vw;
-        max-height: 350px;
-    }
-}
-
-
-
 
 
 /* =========================
@@ -348,8 +311,8 @@
 
 .footer-container {
     display: grid;
-    grid-template-columns: 25% 25% 20% 30%;
-    gap: 0;
+    grid-template-columns: 22% 22% 20% 28%;
+    gap: 50px;
     padding: 50px 60px;
     max-width: 1600px;
     margin: 0 auto;
@@ -411,6 +374,7 @@
 .footer-contact {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: #ffffff;
     text-decoration: none;
@@ -442,8 +406,119 @@
     color: #999999;
 }
 
+
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #2563eb; /* Color de fondo*/
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estado cuando se muestra el botón */
+.btn-volver-arriba.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Efectos al pasar el ratón */
+.btn-volver-arriba:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Efecto al hacer clic */
+.btn-volver-arriba:active {
+    transform: translateY(0);
+}
+
 /* =========================
-   FOOTER RESPONSIVE
+   RESPONSIVE HEADER
+========================= */
+
+@media(max-width:900px){
+
+    .principal{
+        flex-wrap: wrap;
+    }
+
+    .secundario{
+
+        width: 90vw;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media(max-width:768px){
+
+    .principal{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botonencabezado{
+        padding: 10px 20px;
+        margin: 0px 15px;
+        font-size: 14px;
+    }
+
+    .secundario{
+        width: 90vw;
+        max-height: 350px;
+    }
+}
+
+@media(max-width:600px){
+
+    .principal{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .botonencabezado{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .secundario{
+        width: 95vw;
+        max-height: 350px;
+    }
+}
+
+@media(max-width:480px){
+
+    .botonencabezado{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .secundario{
+        width: 98vw;
+    }
+}
+
+/* =========================
+   RESPONSIVE FOOTER
 ========================= */
 
 @media (max-width: 1024px) {
@@ -487,45 +562,4 @@
     .footer-description {
         font-size: 13px;
     }
-}
-
-.btn-volver-arriba {
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    z-index: 1000;
-    background-color: #2563eb; /* Color de fondo*/
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Estado cuando se muestra el botón */
-.btn-volver-arriba.mostrar {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Efectos al pasar el ratón */
-.btn-volver-arriba:hover {
-    background-color: #1d4ed8;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* Efecto al hacer clic */
-.btn-volver-arriba:active {
-    transform: translateY(0);
 }

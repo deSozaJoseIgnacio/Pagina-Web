@@ -3,119 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <title>Fixture</title>
+        <link rel="preload" href="/COMPONENTES/header.html" as="fetch" crossorigin="anonymous">
+        <link rel="preload" href="/COMPONENTES/footer.html" as="fetch" crossorigin="anonymous">
+        <link rel="preload" href="/COMPONENTES/btnsub.html" as="fetch" crossorigin="anonymous">
         <link rel="stylesheet" href="../CSS/estilos_generales.css">
         <link rel="stylesheet" href="../CSS/fixture.css">
     </head>
 
     <body>
-        <header class="encabezado">
-            <nav>
-                <ul class="principal">
-                    <li><a class="botonencabezado" href="../index.html">Historia</a></li>
+        <div id="header"></div>
 
-                    <li class="album">
-                        <a class="botonencabezado">Álbum</a>
-
-                        <ul class="secundario">
-                                <li><a href="../html/paginas_del_album/copa_del_mundo_2026.html">Copa del Mundo 2026</a></li>
-                                <li><a href="../html/paginas_del_album/mexico.html">México</a></li>
-                                <li><a href="../html/paginas_del_album/sudafrica.html">Sudáfrica</a></li>
-                                <li><a href="../html/paginas_del_album/corea_del_sur.html">Corea del Sur</a></li>
-                                <li><a href="../html/paginas_del_album/republica_checa.html">República Checa</a></li>
-                                <li><a href="../html/paginas_del_album/canada.html">Canadá</a></li>
-                                <li><a href="../html/paginas_del_album/bosnia.html">Bosnia</a></li>
-                                <li><a href="../html/paginas_del_album/qatar.html">Qatar</a></li>
-                                <li><a href="../html/paginas_del_album/suiza.html">Suiza</a></li>
-                                <li><a href="../html/paginas_del_album/brasil.html">Brasil</a></li>
-                                <li><a href="../html/paginas_del_album/marruecos.html">Marruecos</a></li>
-                                <li><a href="../html/paginas_del_album/haiti.html">Haití</a></li>
-                                <li><a href="../html/paginas_del_album/escocia.html">Escocia</a></li>
-                                <li><a href="../html/paginas_del_album/estados_unidos.html">Estados Unidos</a></li>
-                                <li><a href="../html/paginas_del_album/paraguay.html">Paraguay</a></li>
-                                <li><a href="../html/paginas_del_album/australia.html">Australia</a></li>
-                                <li><a href="../html/paginas_del_album/turquia.html">Turquía</a></li>
-                                <li><a href="../html/paginas_del_album/alemania.html">Alemania</a></li>
-                                <li><a href="../html/paginas_del_album/curazao.html">Curazao</a></li>
-                                <li><a href="../html/paginas_del_album/costa_de_marfil.html">Costa de Marfil</a></li>
-                                <li><a href="../html/paginas_del_album/ecuador.html">Ecuador</a></li>
-                                <li><a href="../html/paginas_del_album/paises_bajos.html">Países Bajos</a></li>
-                                <li><a href="../html/paginas_del_album/japon.html">Japón</a></li>
-                                <li><a href="../html/paginas_del_album/suecia.html">Suecia</a></li>
-                                <li><a href="../html/paginas_del_album/tunez.html">Túnez</a></li>
-                                <li><a href="../html/paginas_del_album/belgica.html">Bélgica</a></li>
-                                <li><a href="../html/paginas_del_album/egipto.html">Egipto</a></li>
-                                <li><a href="../html/paginas_del_album/iran.html">Irán</a></li>
-                                <li><a href="../html/paginas_del_album/nueva_zelanda.html">Nueva Zelanda</a></li>
-                                <li><a href="../html/paginas_del_album/españa.html">España</a></li>
-                                <li><a href="../html/paginas_del_album/cabo_verde.html">Cabo Verde</a></li>
-                                <li><a href="../html/paginas_del_album/arabia_saudita.html">Arabia Saudita</a></li>
-                                <li><a href="../html/paginas_del_album/uruguay.html">Uruguay</a></li>
-                                <li><a href="../html/paginas_del_album/francia.html">Francia</a></li>
-                                <li><a href="../html/paginas_del_album/senegal.html">Senegal</a></li>
-                                <li><a href="../html/paginas_del_album/irak.html">Irak</a></li>
-                                <li><a href="../html/paginas_del_album/noruega.html">Noruega</a></li>
-                                <li><a href="../html/paginas_del_album/argentina.html">Argentina</a></li>
-                                <li><a href="../html/paginas_del_album/argelia.html">Argelia</a></li>
-                                <li><a href="../html/paginas_del_album/austria.html">Austria</a></li>
-                                <li><a href="../html/paginas_del_album/jordania.html">Jordania</a></li>
-                                <li><a href="../html/paginas_del_album/portugal.html">Portugal</a></li>
-                                <li><a href="../html/paginas_del_album/republica_democratica_del_congo.html">República Democrática del Congo</a></li>
-                                <li><a href="../html/paginas_del_album/uzbekistan.html">Uzbekistán</a></li>
-                                <li><a href="../html/paginas_del_album/colombia.html">Colombia</a></li>
-                                <li><a href="../html/paginas_del_album/inglaterra.html">Inglaterra</a></li>
-                                <li><a href="../html/paginas_del_album/croacia.html">Croacia</a></li>
-                                <li><a href="../html/paginas_del_album/ghana.html">Ghana</a></li>
-                                <li><a href="../html/paginas_del_album/panama.html">Panamá</a></li>
-                                <li><a href="../html/paginas_del_album/historia_de_la_copa_del_mundo.html">Historia de la Copa del Mundo</a></li>
-                            </ul>
-                    </li>
-
-                    <li><a class="botonencabezado" href="resumen_album.html">Resumen del Álbum</a></li>
-                    <li><a class="botonencabezado" href="fixture.html">Fixture</a></li>
-                    <li><a class="botonencabezado" href="estadisticas.html">Estadísticas</a></li>
-                </ul>
-            </nav>
-        </header>
         <main class="main">
 
             <section class="grupos">
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.png" class="banderas">México</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.webp" class="banderas">México</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/sudafrica.png" class="banderas">Sudáfrica</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/sudafrica.webp" class="banderas">Sudáfrica</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.png" class="banderas">Corea del Sur</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.webp" class="banderas">Corea del Sur</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.png" class="banderas">República Checa</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.webp" class="banderas">República Checa</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.png" class="banderas">Sudáfrica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.webp" class="banderas">Sudáfrica</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.png" class="banderas">República Checa</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.webp" class="banderas">República Checa</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.png" class="banderas">México</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.webp" class="banderas">México</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/corea_del_sur.png" class="banderas">Corea del Sur</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/corea_del_sur.webp" class="banderas">Corea del Sur</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.png" class="banderas">México</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.webp" class="banderas">México</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.png" class="banderas">República Checa</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/republica_checa.webp" class="banderas">República Checa</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.png" class="banderas">Sudáfrica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.webp" class="banderas">Sudáfrica</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/corea_del_sur.png" class="banderas">Corea del Sur</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/corea_del_sur.webp" class="banderas">Corea del Sur</td>
                         </tr>
                     </table>
                 </div>
@@ -134,7 +71,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.png" class="banderas">México</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/mexico.webp" class="banderas">México</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
@@ -146,7 +83,7 @@
                             <td class="celda_medio">9</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.png" class="banderas">Sudáfrica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/sudafrica.webp" class="banderas">Sudáfrica</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -158,7 +95,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr class="tercer_puesto">
-                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.png" class="banderas">Corea del Sur</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.webp" class="banderas">Corea del Sur</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -170,7 +107,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_checa.png" class="banderas">República Checa</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_checa.webp" class="banderas">República Checa</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
@@ -189,40 +126,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.png" class="banderas">Canadá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.webp" class="banderas">Canadá</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/bosnia.png" class="banderas">Bosnia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/bosnia.webp" class="banderas">Bosnia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/qatar.png" class="banderas">Qatar</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/qatar.webp" class="banderas">Qatar</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/suiza.png" class="banderas">Suiza</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/suiza.webp" class="banderas">Suiza</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.png" class="banderas">Suiza</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.webp" class="banderas">Suiza</td>
                             <td class="celda_medio">4</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/bosnia.png" class="banderas">Bosnia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/bosnia.webp" class="banderas">Bosnia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.png" class="banderas">Canadá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.webp" class="banderas">Canadá</td>
                             <td class="celda_medio">6</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/qatar.png" class="banderas">Qatar</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/qatar.webp" class="banderas">Qatar</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.png" class="banderas">Suiza</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.webp" class="banderas">Suiza</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/canada.png" class="banderas">Canadá</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/canada.webp" class="banderas">Canadá</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.png" class="banderas">Bosnia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.webp" class="banderas">Bosnia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/qatar.png" class="banderas">Qatar</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/qatar.webp" class="banderas">Qatar</td>
                         </tr>
                     </table>
                 </div>
@@ -241,7 +178,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.png" class="banderas">Suiza</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suiza.webp" class="banderas">Suiza</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -253,7 +190,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.png" class="banderas">Canadá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/canada.webp" class="banderas">Canadá</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -265,7 +202,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.png" class="banderas">Bosnia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.webp" class="banderas">Bosnia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -277,7 +214,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/qatar.png" class="banderas">Qatar</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/qatar.webp" class="banderas">Qatar</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
@@ -296,40 +233,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.png" class="banderas">Brasil</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.webp" class="banderas">Brasil</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/marruecos.png" class="banderas">Marruecos</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/marruecos.webp" class="banderas">Marruecos</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/haiti.png" class="banderas">Haití</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/haiti.webp" class="banderas">Haití</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/escocia.png" class="banderas">Escocia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/escocia.webp" class="banderas">Escocia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.png" class="banderas">Brasil</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.webp" class="banderas">Brasil</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/haiti.png" class="banderas">Haití</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/haiti.webp" class="banderas">Haití</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.png" class="banderas">Escocia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.webp" class="banderas">Escocia</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/marruecos.png" class="banderas">Marruecos</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/marruecos.webp" class="banderas">Marruecos</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.png" class="banderas">Escocia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.webp" class="banderas">Escocia</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/brasil.png" class="banderas">Brasil</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/brasil.webp" class="banderas">Brasil</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/marruecos.png" class="banderas">Marruecos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/marruecos.webp" class="banderas">Marruecos</td>
                             <td class="celda_medio">4</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/haiti.png" class="banderas">Haití</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/haiti.webp" class="banderas">Haití</td>
                         </tr>
                     </table>
                 </div>
@@ -348,7 +285,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.png" class="banderas">Brasil</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/brasil.webp" class="banderas">Brasil</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -360,7 +297,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/marruecos.png" class="banderas">Marruecos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/marruecos.webp" class="banderas">Marruecos</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -372,7 +309,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.png" class="banderas">Escocia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.webp" class="banderas">Escocia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -384,7 +321,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/haiti.png" class="banderas">Haití</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/haiti.webp" class="banderas">Haití</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -403,40 +340,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.png" class="banderas">Estados Unidos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.webp" class="banderas">Estados Unidos</td>
                             <td class="celda_medio">4</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/paraguay.png" class="banderas">Paraguay</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/paraguay.webp" class="banderas">Paraguay</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/australia.png" class="banderas">Australia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/australia.webp" class="banderas">Australia</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/turquia.png" class="banderas">Turquía</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/turquia.webp" class="banderas">Turquía</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.png" class="banderas">Estados Unidos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.webp" class="banderas">Estados Unidos</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/australia.png" class="banderas">Australia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/australia.webp" class="banderas">Australia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.png" class="banderas">Turquía</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.webp" class="banderas">Turquía</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/paraguay.png" class="banderas">Paraguay</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/paraguay.webp" class="banderas">Paraguay</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.png" class="banderas">Turquía</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.webp" class="banderas">Turquía</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/estados_unidos.png" class="banderas">Estados Unidos</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/estados_unidos.webp" class="banderas">Estados Unidos</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.png" class="banderas">Paraguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.webp" class="banderas">Paraguay</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/australia.png" class="banderas">Australia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/australia.webp" class="banderas">Australia</td>
                         </tr>
                     </table>
                 </div>
@@ -455,7 +392,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.png" class="banderas">Estados Unidos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/estados_unidos.webp" class="banderas">Estados Unidos</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
@@ -467,7 +404,7 @@
                             <td class="celda_medio">6</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/australia.png" class="banderas">Australia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/australia.webp" class="banderas">Australia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -479,7 +416,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.png" class="banderas">Paraguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.webp" class="banderas">Paraguay</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -491,7 +428,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.png" class="banderas">Turquía</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/turquia.webp" class="banderas">Turquía</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -510,40 +447,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.png" class="banderas">Alemania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.webp" class="banderas">Alemania</td>
                             <td class="celda_medio">7</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/curazao.png" class="banderas">Curazao</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/curazao.webp" class="banderas">Curazao</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/costa_de_marfil.png" class="banderas">Costa de Marfil</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/costa_de_marfil.webp" class="banderas">Costa de Marfil</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/ecuador.png" class="banderas">Ecuador</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/ecuador.webp" class="banderas">Ecuador</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.png" class="banderas">Alemania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.webp" class="banderas">Alemania</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/costa_de_marfil.png" class="banderas">Costa de Marfil</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/costa_de_marfil.webp" class="banderas">Costa de Marfil</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.png" class="banderas">Ecuador</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.webp" class="banderas">Ecuador</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/curazao.png" class="banderas">Curazao</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/curazao.webp" class="banderas">Curazao</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.png" class="banderas">Ecuador</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.webp" class="banderas">Ecuador</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/alemania.png" class="banderas">Alemania</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/alemania.webp" class="banderas">Alemania</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/curazao.png" class="banderas">Curazao</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/curazao.webp" class="banderas">Curazao</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/costa_de_marfil.png" class="banderas">Costa de Marfil</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/costa_de_marfil.webp" class="banderas">Costa de Marfil</td>
                         </tr>
                     </table>
                 </div>
@@ -562,7 +499,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.png" class="banderas">Alemania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/alemania.webp" class="banderas">Alemania</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
@@ -574,7 +511,7 @@
                             <td class="celda_medio">6</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/costa_de_marfil.png" class="banderas">Costa de Marfil</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/costa_de_marfil.webp" class="banderas">Costa de Marfil</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
@@ -586,7 +523,7 @@
                             <td class="celda_medio">6</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.png" class="banderas">Ecuador</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.webp" class="banderas">Ecuador</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -598,7 +535,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/curazao.png" class="banderas">Curazao</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/curazao.webp" class="banderas">Curazao</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
@@ -617,40 +554,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.png" class="banderas">Paises Bajos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.webp" class="banderas">Paises Bajos</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/japon.png" class="banderas">Japon</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/japon.webp" class="banderas">Japon</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.png" class="banderas">Suecia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.webp" class="banderas">Suecia</td>
                             <td class="celda_medio">5</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/tunez.png" class="banderas">Túnez</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/tunez.webp" class="banderas">Túnez</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.png" class="banderas">Paises Bajos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.webp" class="banderas">Paises Bajos</td>
                             <td class="celda_medio">5</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/suecia.png" class="banderas">Suecia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/suecia.webp" class="banderas">Suecia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.png" class="banderas">Túnez</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.webp" class="banderas">Túnez</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">4</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/japon.png" class="banderas">Japon</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/japon.webp" class="banderas">Japon</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.png" class="banderas">Túnez</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.webp" class="banderas">Túnez</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/paises_bajos.png" class="banderas">Paises Bajos</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/paises_bajos.webp" class="banderas">Paises Bajos</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/japon.png" class="banderas">Japon</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/japon.webp" class="banderas">Japon</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/suecia.png" class="banderas">Suecia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/suecia.webp" class="banderas">Suecia</td>
                         </tr>
                     </table>
                 </div>
@@ -669,7 +606,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.png" class="banderas">Países Bajos</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paises_bajos.webp" class="banderas">Países Bajos</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -681,7 +618,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/japon.png" class="banderas">Japon</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/japon.webp" class="banderas">Japon</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">2</td>
@@ -693,7 +630,7 @@
                             <td class="celda_medio">5</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.png" class="banderas">Suecia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.webp" class="banderas">Suecia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -705,7 +642,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.png" class="banderas">Túnez</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/tunez.webp" class="banderas">Túnez</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -724,40 +661,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.png" class="banderas">Bélgica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.webp" class="banderas">Bélgica</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/egipto.png" class="banderas">Egipto</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/egipto.webp" class="banderas">Egipto</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.png" class="banderas">Iran</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.webp" class="banderas">Iran</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/nueva_zelanda.png" class="banderas">Nueva Zelanda</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/nueva_zelanda.webp" class="banderas">Nueva Zelanda</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.png" class="banderas">Bélgica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.webp" class="banderas">Bélgica</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/iran.png" class="banderas">Iran</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/iran.webp" class="banderas">Iran</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.png" class="banderas">Nueva Zelanda</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.webp" class="banderas">Nueva Zelanda</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/egipto.png" class="banderas">Egipto</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/egipto.webp" class="banderas">Egipto</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.png" class="banderas">Nueva Zelanda</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.webp" class="banderas">Nueva Zelanda</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">5</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/belgica.png" class="banderas">Bélgica</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/belgica.webp" class="banderas">Bélgica</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/egipto.png" class="banderas">Egipto</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/egipto.webp" class="banderas">Egipto</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/iran.png" class="banderas">Iran</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/iran.webp" class="banderas">Iran</td>
                         </tr>
                     </table>
                 </div>
@@ -776,7 +713,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.png" class="banderas">Bélgica</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/belgica.webp" class="banderas">Bélgica</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">2</td>
@@ -788,7 +725,7 @@
                             <td class="celda_medio">5</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/egipto.png" class="banderas">Egipto</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/egipto.webp" class="banderas">Egipto</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">2</td>
@@ -800,7 +737,7 @@
                             <td class="celda_medio">5</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.png" class="banderas">Iran</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.webp" class="banderas">Iran</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">3</td>
@@ -812,7 +749,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.png" class="banderas">Nueva Zelanda</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/nueva_zelanda.webp" class="banderas">Nueva Zelanda</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
@@ -831,40 +768,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.png" class="banderas">España</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.webp" class="banderas">España</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/cabo_verde.png" class="banderas">Cabo Verde</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/cabo_verde.webp" class="banderas">Cabo Verde</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/arabia_saudita.png" class="banderas">Arabia Saudita</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/arabia_saudita.webp" class="banderas">Arabia Saudita</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/uruguay.png" class="banderas">Uruguay</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/uruguay.webp" class="banderas">Uruguay</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.png" class="banderas">España</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.webp" class="banderas">España</td>
                             <td class="celda_medio">4</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/arabia_saudita.png" class="banderas">Arabia Saudita</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/arabia_saudita.webp" class="banderas">Arabia Saudita</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.png" class="banderas">Uruguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.webp" class="banderas">Uruguay</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/cabo_verde.png" class="banderas">Cabo Verde</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/cabo_verde.webp" class="banderas">Cabo Verde</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.png" class="banderas">Uruguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.webp" class="banderas">Uruguay</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/españa.png" class="banderas">España</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/españa.webp" class="banderas">España</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/cabo_verde.png" class="banderas">Cabo Verde</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/cabo_verde.webp" class="banderas">Cabo Verde</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/arabia_saudita.png" class="banderas">Arabia Saudita</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/arabia_saudita.webp" class="banderas">Arabia Saudita</td>
                         </tr>
                     </table>
                 </div>
@@ -883,7 +820,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.png" class="banderas">España</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/españa.webp" class="banderas">España</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -895,7 +832,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/cabo_verde.png" class="banderas">Cabo Verde</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/cabo_verde.webp" class="banderas">Cabo Verde</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">3</td>
@@ -907,7 +844,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.png" class="banderas">Uruguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.webp" class="banderas">Uruguay</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">2</td>
@@ -919,7 +856,7 @@
                             <td class="celda_medio">2</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/arabia_saudita.png" class="banderas">Arabia Saudita</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/arabia_saudita.webp" class="banderas">Arabia Saudita</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">2</td>
@@ -938,40 +875,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.png" class="banderas">Francia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.webp" class="banderas">Francia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/senegal.png" class="banderas">Senegal</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/senegal.webp" class="banderas">Senegal</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/irak.png" class="banderas">Irak</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/irak.webp" class="banderas">Irak</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">4</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/noruega.png" class="banderas">Noruega</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/noruega.webp" class="banderas">Noruega</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.png" class="banderas">Francia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.webp" class="banderas">Francia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/irak.png" class="banderas">Irak</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/irak.webp" class="banderas">Irak</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.png" class="banderas">Noruega</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.webp" class="banderas">Noruega</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/senegal.png" class="banderas">Senegal</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/senegal.webp" class="banderas">Senegal</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.png" class="banderas">Noruega</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.webp" class="banderas">Noruega</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">4</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/francia.png" class="banderas">Francia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/francia.webp" class="banderas">Francia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.png" class="banderas">Senegal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.webp" class="banderas">Senegal</td>
                             <td class="celda_medio">5</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/irak.png" class="banderas">Irak</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/irak.webp" class="banderas">Irak</td>
                         </tr>
                     </table>
                 </div>
@@ -990,7 +927,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.png" class="banderas">Francia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/francia.webp" class="banderas">Francia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
@@ -1002,7 +939,7 @@
                             <td class="celda_medio">9</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.png" class="banderas">Noruega</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/noruega.webp" class="banderas">Noruega</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
@@ -1014,7 +951,7 @@
                             <td class="celda_medio">6</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.png" class="banderas">Senegal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.webp" class="banderas">Senegal</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -1026,7 +963,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/irak.png" class="banderas">Irak</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/irak.webp" class="banderas">Irak</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -1045,40 +982,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.png" class="banderas">Argentina</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.webp" class="banderas">Argentina</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/argelia.png" class="banderas">Argelia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/argelia.webp" class="banderas">Argelia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/austria.png" class="banderas">Austria</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/austria.webp" class="banderas">Austria</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/jordania.png" class="banderas">Jordania</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/jordania.webp" class="banderas">Jordania</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.png" class="banderas">Argentina</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.webp" class="banderas">Argentina</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/austria.png" class="banderas">Austria</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/austria.webp" class="banderas">Austria</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.png" class="banderas">Jordania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.webp" class="banderas">Jordania</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/argelia.png" class="banderas">Argelia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/argelia.webp" class="banderas">Argelia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.png" class="banderas">Jordania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.webp" class="banderas">Jordania</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/argentina.png" class="banderas">Argentina</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/argentina.webp" class="banderas">Argentina</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.png" class="banderas">Argelia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.webp" class="banderas">Argelia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/austria.png" class="banderas">Austria</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/austria.webp" class="banderas">Austria</td>
                         </tr>
                     </table>
                 </div>
@@ -1097,7 +1034,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.png" class="banderas">Argentina</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argentina.webp" class="banderas">Argentina</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
@@ -1109,7 +1046,7 @@
                             <td class="celda_medio">9</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/austria.png" class="banderas">Austria</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/austria.webp" class="banderas">Austria</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1121,7 +1058,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.png" class="banderas">Argelia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.webp" class="banderas">Argelia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1133,7 +1070,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.png" class="banderas">Jordania</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/jordania.webp" class="banderas">Jordania</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -1152,40 +1089,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.png" class="banderas">Portugal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.webp" class="banderas">Portugal</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/republica_democratica_del_congo.png" class="banderas">RD Congo</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/republica_democratica_del_congo.webp" class="banderas">RD Congo</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uzbekistan.png" class="banderas">Uzbekistán</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uzbekistan.webp" class="banderas">Uzbekistán</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">3</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/colombia.png" class="banderas">Colombia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/colombia.webp" class="banderas">Colombia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.png" class="banderas">Portugal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.webp" class="banderas">Portugal</td>
                             <td class="celda_medio">5</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/uzbekistan.png" class="banderas">Uzbekistán</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/uzbekistan.webp" class="banderas">Uzbekistán</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.png" class="banderas">Colombia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.webp" class="banderas">Colombia</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/republica_democratica_del_congo.png" class="banderas">RD Congo</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/republica_democratica_del_congo.webp" class="banderas">RD Congo</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.png" class="banderas">Colombia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.webp" class="banderas">Colombia</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/portugal.png" class="banderas">Portugal</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/portugal.webp" class="banderas">Portugal</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.png" class="banderas">RD Congo</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.webp" class="banderas">RD Congo</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/uzbekistan.png" class="banderas">Uzbekistán</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/uzbekistan.webp" class="banderas">Uzbekistán</td>
                         </tr>
                     </table>
                 </div>
@@ -1204,7 +1141,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.png" class="banderas">Colombia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/colombia.webp" class="banderas">Colombia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -1216,7 +1153,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.png" class="banderas">Portugal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/portugal.webp" class="banderas">Portugal</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">2</td>
@@ -1228,7 +1165,7 @@
                             <td class="celda_medio">5</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.png" class="banderas">RD Congo</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.webp" class="banderas">RD Congo</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1240,7 +1177,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uzbekistan.png" class="banderas">Uzbekistán</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uzbekistan.webp" class="banderas">Uzbekistán</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -1259,40 +1196,40 @@
                 <div class="partidos_fase">
                     <table border="4">
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.png" class="banderas">Inglaterra</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.webp" class="banderas">Inglaterra</td>
                             <td class="celda_medio">4</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/croacia.png" class="banderas">Croacia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/croacia.webp" class="banderas">Croacia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.png" class="banderas">Ghana</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.webp" class="banderas">Ghana</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/panama.png" class="banderas">Panamá</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/panama.webp" class="banderas">Panamá</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.png" class="banderas">Inglaterra</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.webp" class="banderas">Inglaterra</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/ghana.png" class="banderas">Ghana</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/ghana.webp" class="banderas">Ghana</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.png" class="banderas">Panamá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.webp" class="banderas">Panamá</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/croacia.png" class="banderas">Croacia</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/croacia.webp" class="banderas">Croacia</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.png" class="banderas">Panamá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.webp" class="banderas">Panamá</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">2</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/inglaterra.png" class="banderas">Inglaterra</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/inglaterra.webp" class="banderas">Inglaterra</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/croacia.png" class="banderas">Croacia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/croacia.webp" class="banderas">Croacia</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
-                            <td class="celda_final"><img src="../PNG/Banderas/ghana.png" class="banderas">Ghana</td>
+                            <td class="celda_final"><img src="../PNG/Banderas/ghana.webp" class="banderas">Ghana</td>
                         </tr>
                     </table>
                 </div>
@@ -1311,7 +1248,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.png" class="banderas">Inglaterra</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/inglaterra.webp" class="banderas">Inglaterra</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">1</td>
@@ -1323,7 +1260,7 @@
                             <td class="celda_medio">7</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/croacia.png" class="banderas">Croacia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/croacia.webp" class="banderas">Croacia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">2</td>
                             <td class="celda_medio">0</td>
@@ -1335,7 +1272,7 @@
                             <td class="celda_medio">6</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.png" class="banderas">Ghana</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.webp" class="banderas">Ghana</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1347,7 +1284,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.png" class="banderas">Panamá</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/panama.webp" class="banderas">Panamá</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">0</td>
@@ -1378,7 +1315,7 @@
                             <td class="celda_medio_fase">Pts</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.png" class="banderas">RD Congo</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/republica_democratica_del_congo.webp" class="banderas">RD Congo</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1390,7 +1327,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.png" class="banderas">Suecia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/suecia.webp" class="banderas">Suecia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1402,7 +1339,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.png" class="banderas">Ghana</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ghana.webp" class="banderas">Ghana</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1414,7 +1351,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.png" class="banderas">Ecuador</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/ecuador.webp" class="banderas">Ecuador</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1426,7 +1363,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.png" class="banderas">Bosnia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/bosnia.webp" class="banderas">Bosnia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1438,7 +1375,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.png" class="banderas">Argelia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/argelia.webp" class="banderas">Argelia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1450,7 +1387,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.png" class="banderas">Paraguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/paraguay.webp" class="banderas">Paraguay</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">1</td>
@@ -1462,7 +1399,7 @@
                             <td class="celda_medio">4</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.png" class="banderas">Senegal</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/senegal.webp" class="banderas">Senegal</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -1474,7 +1411,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.png" class="banderas">Iran</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/iran.webp" class="banderas">Iran</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">3</td>
@@ -1486,7 +1423,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr class="tercer_puesto">
-                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.png" class="banderas">Corea del Sur</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/corea_del_sur.webp" class="banderas">Corea del Sur</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -1498,7 +1435,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.png" class="banderas">Escocia</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/escocia.webp" class="banderas">Escocia</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">1</td>
                             <td class="celda_medio">0</td>
@@ -1510,7 +1447,7 @@
                             <td class="celda_medio">3</td>
                         </tr>
                         <tr>
-                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.png" class="banderas">Uruguay</td>
+                            <td class="celda_inicio"><img src="../PNG/Banderas/uruguay.webp" class="banderas">Uruguay</td>
                             <td class="celda_medio">3</td>
                             <td class="celda_medio">0</td>
                             <td class="celda_medio">2</td>
@@ -1706,62 +1643,9 @@
 
         </main>
         
-        <footer class="pie_de_pagina">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h3 class="footer-title">Álbum Mundial 2026</h3>
-                    <p class="footer-description">Colección completa del álbum de la Copa del Mundo 2026 con toda la información histórica de la FIFA y Panini.</p>
-                </div>
+        <div id="footer"></div>
 
-                <div class="footer-column">
-                    <h3 class="footer-title">Mapa del Sitio</h3>
-                    <nav class="footer-nav" aria-label="Mapa del sitio">
-                        <ul class="footer-links">
-                            <li><a href="../index.html">Historia</a></li>
-                            <li><a href="resumen_album.html">Resumen del Álbum</a></li>
-                            <li><a href="fixture.html">Fixture</a></li>
-                            <li><a href="estadisticas.html">Estadísticas</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="footer-column">
-                    <h3 class="footer-title">Propietarios</h3>
-                    <ul class="footer-links">
-                        <li>de Soza José Ignacio</li>
-                        <li>Rodríguez Mateo Nicolás</li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3 class="footer-title">Contacto</h3>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="mailto:desozajoseignacio@gmail.com" class="footer-contact">
-                                <img src="../PNG/gmail_logo.png" class="imagen_pie_de_pagina" alt="Gmail">
-                                desozajoseignacio@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:rodriguezmateonicolas09@gmail.com" class="footer-contact">
-                                <img src="../PNG/gmail_logo.png" class="imagen_pie_de_pagina" alt="Gmail">
-                                rodriguezmateonicolas09@gmail.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2026 Álbum Mundial 2026. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-        
-        <button id="btnVolverArriba" class="btn-volver-arriba" aria-label="Volver arriba">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 15l-6-6-6 6"/>
-            </svg>
-        </button>
+        <div id="btnsub"></div>
 
         <script src="../JAVASCRIPT/encabezado.js"></script>
     </body>
