@@ -26,10 +26,6 @@ async function cargarComponente(selector, ruta) {
     }
 }
 
-cargarComponente("#header", "/COMPONENTES/header.html");
-cargarComponente("#footer", "/COMPONENTES/footer.html");
-cargarComponente("#btnsub", "/COMPONENTES/btnsub.html");
-
 function marcarPaginaActual() {
     let paginaActual = window.location.pathname.split("/").pop();
 
