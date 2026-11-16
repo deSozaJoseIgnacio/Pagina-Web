@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: #1f2937;
+    color: #fff;
+}
+.header a { color: #fff; text-decoration: none; margin: 0 10px; }
+.icono-login { font-size: 24px; }
+
+/* Menú del usuario */
+.menu-usuario { position: relative; }
+.btn-usuario {
+    background: #2563eb; color: #fff; border: 0;
+    padding: 8px 14px; border-radius: 6px; cursor: pointer;
+}
+.desplegable {
+    display: none;
+    position: absolute; right: 0; top: 100%;
+    background: #fff; border-radius: 6px; min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    z-index: 10;
+}
+.desplegable a { display: block; color: #111; margin: 0; padding: 10px 14px; }
+.desplegable a:hover { background: #eef1f5; }
+.menu-usuario:hover .desplegable { display: block; }

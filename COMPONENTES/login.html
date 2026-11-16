@@ -1,0 +1,32 @@
+<div id="auth-fondo">
+    <div id="auth-caja" role="dialog" aria-modal="true" aria-label="Cuenta">
+        <button id="auth-cerrar" type="button" aria-label="Cerrar">&times;</button>
+
+        <div class="auth-tabs">
+            <button type="button" id="tab-login" class="activa">Iniciar sesión</button>
+            <button type="button" id="tab-registro">Registrarse</button>
+        </div>
+
+        <!-- Formulario de inicio de sesión -->
+        <div id="form-login">
+            <label for="login-mail">Correo electrónico</label>
+            <input id="login-mail" type="text" autocomplete="off">
+            <label for="login-pass">Contraseña</label>
+            <input id="login-pass" type="password" autocomplete="off">
+            <button class="auth-enviar" type="button" id="login-enviar">Entrar</button>
+            <div class="auth-error" id="login-error"></div>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="form-registro" style="display:none">
+            <label for="reg-nombre">Nombre de usuario</label>
+            <input id="reg-nombre" type="text" autocomplete="off">
+            <label for="reg-mail">Correo electrónico</label>
+            <input id="reg-mail" type="text" autocomplete="off">
+            <label for="reg-pass">Contraseña (más de 8 caracteres)</label>
+            <input id="reg-pass" type="password" autocomplete="off">
+            <button class="auth-enviar" type="button" id="reg-enviar">Crear cuenta</button>
+            <div class="auth-error" id="reg-error"></div>
+        </div>
+    </div>
+</div>
