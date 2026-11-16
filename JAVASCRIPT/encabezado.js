@@ -90,3 +90,4 @@ function configurarBtnVolverArriba() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', configurarBtnVolverArriba);

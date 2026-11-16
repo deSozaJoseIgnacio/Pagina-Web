@@ -5,7 +5,6 @@
         <title>Fixture</title>
         <link rel="stylesheet" href="../CSS/estilos_generales.css">
         <link rel="stylesheet" href="../CSS/fixture.css">
-        <script src="../JAVASCRIPT/login.js" defer></script>
     </head>
 
     <body>
@@ -1772,13 +1771,13 @@
             </div>
         </footer>
         
-        <button id="btnVolverArriba" class="btn-volver-arriba" aria-label="Volver arriba">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 15l-6-6-6 6"/>
-            </svg>
-        </button>
-
-        <script src="../JAVASCRIPT/encabezado.js"></script>
+        <div id="btnsub">
+            <button id="btnVolverArriba" class="btn-volver-arriba" aria-label="Volver arriba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 15l-6-6-6 6"/>
+                </svg>
+            </button>
+        </div>
 
         <div id="auth-fondo">
             <div id="auth-caja" role="dialog" aria-modal="true" aria-label="Cuenta">
@@ -1802,15 +1801,18 @@
                 <!-- Formulario de registro -->
                 <div id="form-registro" style="display:none">
                     <label for="reg-nombre">Nombre de usuario</label>
-                    <input id="reg-nombre" type="text" autocomplete="off">
+                    <input id="reg-nombre" type="text" autocomplete="off" name="nombre">
                     <label for="reg-mail">Correo electrónico</label>
-                    <input id="reg-mail" type="text" autocomplete="off">
+                    <input id="reg-mail" type="text" autocomplete="off" name="correo">
                     <label for="reg-pass">Contraseña (más de 8 caracteres)</label>
-                    <input id="reg-pass" type="password" autocomplete="off">
+                    <input id="reg-pass" type="password" autocomplete="off" name="contrasena">
                     <button class="auth-enviar" type="button" id="reg-enviar">Crear cuenta</button>
                     <div class="auth-error" id="reg-error"></div>
                 </div>
             </div>
         </div>
+
+        <script src="../JAVASCRIPT/encabezado.js"></script>
+        <script src="../JAVASCRIPT/login.js"></script>
     </body>
 </html>
